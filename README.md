@@ -538,12 +538,16 @@ Future development can expand into areas such as:
 
 <div align="center">
 
-## IRIS
+<img src="docs/screenshots/iris-center.png" alt="IRIS — Your Intelligent Assistant" width="280"/>
 
-### Your Personal Assistant
+<br>
 
 **Listen. Understand. Respond.**
 
 Built with Python, React, FastAPI, MySQL, AI/ML, APIs, voice technology, and a lot of late-night debugging. 🚀
+
+<br>
+
+**Made by Mandeep Singh**
 
 </div>
