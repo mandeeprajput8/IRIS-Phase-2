@@ -620,39 +620,6 @@
   }
 }
 
-/* =========================
-   IRIS BREATHING
-========================= */
-
-@keyframes iris-breathe {
-
-  0%,
-  100% {
-    transform: scale(0.97);
-  }
-
-  50% {
-    transform: scale(1.03);
-  }
-
-}
-
-
-@keyframes iris-glow {
-
-  0%,
-  100% {
-    opacity: 0.55;
-    transform: scale(0.95);
-  }
-
-  50% {
-    opacity: 0.9;
-    transform: scale(1.08);
-  }
-
-}
-
 
 /* =========================
    IRIS TITLE
@@ -680,78 +647,6 @@
 
   color: #54cfff;
 }
-
-
-/* =========================
-   CORE ANIMATIONS
-========================= */
-
-@keyframes core-breathe {
-
-  0%,
-  100% {
-    transform: scale(0.97);
-  }
-
-  50% {
-    transform: scale(1.03);
-  }
-}
-
-
-@keyframes core-glow {
-
-  0%,
-  100% {
-    opacity: 0.55;
-    transform: scale(0.9);
-  }
-
-  50% {
-    opacity: 1;
-    transform: scale(1.15);
-  }
-}
-
-
-@keyframes core-rotate {
-
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-@keyframes core-rotate-reverse {
-
-  from {
-    transform: rotate(360deg);
-  }
-
-  to {
-    transform: rotate(0deg);
-  }
-}
-
-
-@keyframes core-pulse {
-
-  0%,
-  100% {
-    transform: scale(0.8);
-    opacity: 0.75;
-  }
-
-  50% {
-    transform: scale(1.15);
-    opacity: 1;
-  }
-}
-
 
 .iris-title {
   display: flex;

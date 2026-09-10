@@ -1,6 +1,6 @@
 // This file is responsible for IRIS UI
 
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import './App.css';
 
 function App() {
@@ -11,61 +11,27 @@ function App() {
 
   // Stores whatever the user currently has in the text input
   const [message, setMessage] = useState('');
-
   // Stores the complete conversation displayed on the screen
   const [conversation, setConversation] = useState([]);
-
-  // Tracks whether IRIS is currently processing a request
+  // Tracks whether IRIS is currently processing a text request
   const [loading, setLoading] = useState(false);
-
   // Tracks whether IRIS is currently listening through the microphone
   const [listening, setListening] = useState(false);
-
   // Tracks whether IRIS is currently speaking
   // Used to trigger the speaking animation on the orb
   const [speaking, setSpeaking] = useState(false);
-
-  // Controls the current status of IRIS
-  // Used to dynamically update the dashboard based on what IRIS is doing
-  const [irisStatus, setIrisStatus] = useState('Ready');
-
-  // Stores the current database connection status
-  // Starts as "checking" until the backend reports the actual status
+  // Stores the current database connection status, Starts as "checking" until the backend reports the actual status
   const [databaseStatus, setDatabaseStatus] = useState('checking');
-
-  // Stores the current backend connection status
-  // Starts as "checking" until React receives a response from FastAPI
-  const [backendStatus, setBackendStatus] = useState("checking");
-
-  // Stores the current voice engine status
-  // Starts as "checking" until the system health check determines its state
-  const [voiceStatus, setVoiceStatus] = useState("checking");
-
+  // Stores the current backend connection status, Starts as "checking" until React receives a response from FastAPI
+  const [backendStatus, setBackendStatus] = useState('checking');
+  // Stores the current voice engine status, Starts as "checking" until the system health check determines its state
+  const [voiceStatus, setVoiceStatus] = useState('checking');
   // Controls whether the IRIS startup animation is visible
   const [showStartup, setShowStartup] = useState(true);
-
-  // Stores the activity messages displayed in the Activity panel
-  // Initially shows that the frontend interface has been initialized
+  // Stores the activity messages displayed in the Activity panel, Initially shows that the frontend interface has been initialized
   const [activities, setActivities] = useState([
-    "Interface initialized"
+    'Interface initialized'
   ]);
-
-  // Stores the activity messages displayed in the dashboard
-  // This is separate from "activities" and is used by the addActivity() function
-  const [activity, setActivity] = useState([
-    'System initialized',
-    'Backend connected',
-    'Voice engine ready',
-    'Awaiting your command...'
-  ]);
-
-  // Stores the current status of the individual IRIS system components
-  // Used to display Backend, Database, and Voice Engine states on the dashboard
-  const [systemStatus, setSystemStatus] = useState({
-    backend: 'Checking...',
-    database: 'Checking...',
-    voice: 'Initializing...',
-  });
 
 
   // =========================================================
@@ -79,309 +45,304 @@ function App() {
   // Prevents the startup sequence from running more than once
   const startupRef = useRef(false);
 
+  // Stores the previous combined system status
+  // Used to detect real system changes instead of repeatedly
+  // adding the same health information to the Activity panel
+  const previousSystemStatus = useRef(null);
+
+  // =========================================================
+  // ACTIVITY
+  // =========================================================
+
   // Adds a new message to the Activity panel
-  // Keeps only the most recent four activity messages visible
-  const addActivity = (message) => {
+  // Keeps only the most recent five activity messages visible
+  const addActivity = useCallback((activityMessage) => {
 
-    setActivity((prev) => [
+    setActivities((prev) => [
 
-      // Keeps the last three existing messages
-      // and adds the new message as the fourth
-      ...prev.slice(-3),
+      // Keeps the last four existing messages
+      // and adds the new message as the fifth
+      ...prev.slice(-4),
 
-      message
+      activityMessage
     ]);
-  };
 
-  // Stores the previous backend status
-  // Used to detect when the backend changes between
-  // online and offline instead of repeatedly adding
-  // the same activity message
-  const previousBackendStatus = useRef(null);
+  }, []);
 
+  // =========================================================
+  // VOICE OUTPUT
+  // =========================================================
+
+  // Sends text to the FastAPI TTS endpoint
+  // and waits until IRIS has finished speaking it.
+  const speakText = useCallback(async (text, errorMessage = 'IRIS TTS failed') => {
+
+    const speakResponse = await fetch(
+      'http://127.0.0.1:8000/api/voice/speak?text=' +
+        encodeURIComponent(text),
+      {
+        method: 'POST',
+      }
+    );
+
+    if (!speakResponse.ok) {
+      throw new Error(errorMessage);
+    }
+
+    await speakResponse.json();
+
+  }, []);
+
+  // =========================================================
+  // VOICE INPUT
+  // =========================================================
+
+  const listenToUser = useCallback(async () => {
+
+    try {
+
+      // =======================================================
+      // 1. IRIS STARTS LISTENING
+      // =======================================================
+
+      setListening(true);
+      setSpeaking(false);
+
+      addActivity('Listening for your command...');
+
+      // =======================================================
+      // 2. ASK BACKEND TO LISTEN
+      // =======================================================
+
+      const res = await fetch(
+        'http://127.0.0.1:8000/api/voice',
+        {
+          method: 'POST',
+        }
+      );
+
+      if (!res.ok) {
+        throw new Error('Voice request failed');
+      }
+      const data = await res.json();
+
+      // =======================================================
+      // 3. NOTHING HEARD
+      // =======================================================
+
+      if (!data.heard) {
+        setListening(false);
+        listenToUser();
+        return;
+      }
+
+      // =======================================================
+      // 4. USER FINISHED SPEAKING
+      // =======================================================
+
+      setListening(false);
+
+      addActivity('Command received');
+
+
+      // Show user's command
+
+      setConversation((prev) => [
+        ...prev,
+        {
+          role: 'user',
+          content: data.heard,
+        },
+      ]);
+
+      // =======================================================
+      // 5. STOP / EXIT / SLEEP
+      // =======================================================
+
+      const command =
+        data.heard.toLowerCase().trim();
+
+
+      if (
+        command === 'stop' ||
+        command === 'exit' ||
+        command === 'sleep'
+      ) {
+
+        // IRIS starts speaking
+        setSpeaking(true);
+
+        addActivity('IRIS is speaking...');
+
+
+        // Speak the local standby response
+        await speakText(
+          data.response,
+          'IRIS standby TTS failed'
+        );
+
+
+        // IRIS finished speaking
+        setSpeaking(false);
+        setListening(false);
+
+
+        // Show IRIS's standby response
+        setConversation((prev) => [
+          ...prev,
+          {
+            role: 'iris',
+            content: data.response,
+          },
+        ]);
+
+        // Do not start another listening cycle.
+        // IRIS remains idle until the microphone button
+        // is used to reactivate the voice session.
+        addActivity('IRIS is in standby');
+
+        return;
+      }
+
+      // =======================================================
+      // 6. IRIS RESPONSE
+      // =======================================================
+
+      if (data.response) {
+
+        // =====================================================
+        // IRIS STARTS SPEAKING
+        // =====================================================
+        setSpeaking(true);
+
+        addActivity('IRIS is speaking...');
+
+        // =====================================================
+        // IRIS SPEAKS THE RESPONSE
+        // =====================================================
+
+        await speakText(data.response);
+
+        // =====================================================
+        // IRIS FINISHED SPEAKING
+        // =====================================================
+        setSpeaking(false);
+
+        // =====================================================
+        // NOW SHOW THE RESPONSE
+        // =====================================================
+
+        setConversation((prev) => [
+          ...prev,
+          {
+            role: 'iris',
+            content: data.response,
+          },
+        ]);
+
+        addActivity('Awaiting your command...');
+      }
+
+      // =======================================================
+      // 7. LISTEN AGAIN
+      // =======================================================
+
+      listenToUser();
+
+    } catch (error) {
+
+      console.error(
+        'Voice command failed:',
+        error
+      );
+
+      setSpeaking(false);
+      setListening(false);
+
+      addActivity('Voice input unavailable');
+    }
+  }, [addActivity, speakText]);
 
   // =========================================================
   // IRIS STARTUP
   // =========================================================
 
-  useEffect(() => {
+  const startIRIS = useCallback(async () => {
 
-    // Wait for the startup animation to finish
-    if (showStartup) return;
+    try {
 
-    // Prevent the startup sequence from running more than once
-    if (startupRef.current) return;
+      // -------------------------------------------------------
+      // IRIS STARTS SPEAKING
+      // -------------------------------------------------------
+      // The backend will generate and speak the startup
+      // greeting using Edge TTS.
 
-    startupRef.current = true;
+      setSpeaking(true);
 
-    const startIRIS = async () => {
-
-      try {
-
-        // -------------------------------------------------------
-        // IRIS STARTS SPEAKING
-        // -------------------------------------------------------
-        // The backend will generate and speak the startup
-        // greeting using Edge TTS.
-
-        setSpeaking(true);
-
-        setIrisStatus('Speaking');
-
-        addActivity('IRIS is speaking...');
+      addActivity('IRIS is speaking...');
 
 
-        // -------------------------------------------------------
-        // ASK BACKEND TO GENERATE STARTUP GREETING
-        // -------------------------------------------------------
+      // -------------------------------------------------------
+      // ASK BACKEND TO GENERATE STARTUP GREETING
+      // -------------------------------------------------------
 
-        const res = await fetch(
-          'http://127.0.0.1:8000/api/voice/welcome',
+      const res = await fetch(
+        'http://127.0.0.1:8000/api/voice/welcome',
+        {
+          method: 'POST'
+        }
+      );
+
+      if (!res.ok) {
+        throw new Error(
+          `Startup greeting failed: ${res.status}`
+        );
+      }
+
+      const data = await res.json();
+
+      // -------------------------------------------------------
+      // IRIS HAS FINISHED SPEAKING
+      // -------------------------------------------------------
+
+      setSpeaking(false);
+
+
+      // Show the same greeting inside the conversation
+      if (data.response) {
+
+        setConversation([
           {
-            method: 'POST'
-          }
-        );
-
-        if (!res.ok) {
-          throw new Error(
-            `Startup greeting failed: ${res.status}`
-          );
-        }
-
-        const data = await res.json();
-
-
-        // -------------------------------------------------------
-        // IRIS HAS FINISHED SPEAKING
-        // -------------------------------------------------------
-
-        setSpeaking(false);
-
-
-        // Show the same greeting inside the conversation
-        if (data.response) {
-
-          setConversation([
-            {
-              role: 'iris',
-              content: data.response,
-            },
-          ]);
-
-        }
-
-
-        // -------------------------------------------------------
-        // START LISTENING
-        // -------------------------------------------------------
-
-        setIrisStatus('Ready');
-
-        addActivity('Awaiting your command...');
-
-        listenToUser();
-
-
-      } catch (error) {
-
-        // Make sure the orb does not remain stuck
-        // in the speaking state if startup fails
-
-        setSpeaking(false);
-
-        setIrisStatus('Ready');
-
-        console.error(
-          "IRIS startup failed:",
-          error
-        );
-
+            role: 'iris',
+            content: data.response,
+          },
+        ]);
       }
 
-    };
+      // -------------------------------------------------------
+      // START LISTENING
+      // -------------------------------------------------------
 
-    startIRIS();
+      addActivity('Awaiting your command...');
 
-  }, [showStartup]);
+      listenToUser();
 
+    } catch (error) {
 
-  // =========================================================
-  // CONVERSATION AUTO-SCROLL
-  // =========================================================
+      // Make sure the orb does not remain stuck
+      // in the speaking state if startup fails
 
-  useEffect(() => {
+      setSpeaking(false);
 
-    conversationEndRef.current?.scrollIntoView({
-      behavior: 'smooth',
-    });
+      console.error(
+        'IRIS startup failed:',
+        error
+      );
 
-  }, [conversation]);
+      addActivity('IRIS startup failed');
+    }
 
-
-  // =========================================================
-  // DYNAMIC SYSTEM HEALTH
-  // =========================================================
-  //
-  // React periodically asks FastAPI for the current
-  // system health.
-  //
-  // One request updates all system statuses:
-  // Backend + Database + Voice + Activity
-  // =========================================================
-
-  useEffect(() => {
-
-    const checkSystemHealth = async () => {
-
-      try {
-
-        const response = await fetch(
-          'http://127.0.0.1:8000/api/health'
-        );
-
-        if (!response.ok) {
-          throw new Error('Backend unavailable');
-        }
-
-        const data = await response.json();
-
-
-        // =====================================================
-        // BACKEND STATUS
-        // =====================================================
-
-        const currentBackendStatus =
-          data.backend === 'online'
-            ? 'online'
-            : 'offline';
-
-        setBackendStatus(currentBackendStatus);
-
-
-        // =====================================================
-        // DATABASE STATUS
-        // =====================================================
-
-        const currentDatabaseStatus =
-          data.database === 'connected'
-            ? 'connected'
-            : 'disconnected';
-
-        setDatabaseStatus(currentDatabaseStatus);
-
-
-        // =====================================================
-        // VOICE ENGINE STATUS
-        // =====================================================
-        // For now, the voice engine is considered ready
-        // whenever the backend is online.
-
-        const currentVoiceStatus =
-          data.backend === 'online'
-            ? 'ready'
-            : 'offline';
-
-        setVoiceStatus(currentVoiceStatus);
-
-
-        // =====================================================
-        // ACTIVITY PANEL
-        // =====================================================
-        // Only update the activity panel when the backend
-        // actually changes state.
-
-        if (
-          previousBackendStatus.current !==
-          currentBackendStatus
-        ) {
-
-          if (currentBackendStatus === 'online') {
-
-            setActivities([
-              'Interface initialized',
-              'Backend connected',
-              'Database connected',
-              'Voice engine ready',
-              'Awaiting your command...'
-            ]);
-
-          } else {
-
-            setActivities([
-              'Interface initialized',
-              'Backend connection lost',
-              'System offline'
-            ]);
-          }
-
-          previousBackendStatus.current =
-            currentBackendStatus;
-        }
-
-      } catch (error) {
-
-        console.error(
-          'System health check failed:',
-          error
-        );
-
-
-        // =====================================================
-        // IF FASTAPI CANNOT BE REACHED
-        // =====================================================
-
-        setBackendStatus('offline');
-        setDatabaseStatus('disconnected');
-        setVoiceStatus('offline');
-
-
-        // Only update Activity if we weren't already offline.
-
-        if (
-          previousBackendStatus.current !==
-          'offline'
-        ) {
-
-          setActivities([
-            'Interface initialized',
-            'Backend connection lost',
-            'System offline'
-          ]);
-
-          previousBackendStatus.current =
-            'offline';
-        }
-      }
-    };
-
-
-    // =========================================================
-    // INITIAL CHECK
-    // =========================================================
-
-    checkSystemHealth();
-
-
-    // =========================================================
-    // CONTINUOUS CHECK
-    // =========================================================
-    // Recheck every 5 seconds so the dashboard can detect
-    // backend/database changes without refreshing the page.
-
-    const interval = setInterval(
-      checkSystemHealth,
-      5000
-    );
-
-
-    // =========================================================
-    // CLEANUP
-    // =========================================================
-    // Stop the interval when App is unmounted.
-
-    return () => clearInterval(interval);
-
-  }, []);
+  }, [addActivity, listenToUser]);
 
 
   // =========================================================
@@ -389,16 +350,16 @@ function App() {
   // =========================================================
 
   // This function is the main bridge between the React frontend
-  // and the FastAPI backend.
+  // and the FastAPI backend for text commands.
   //
   // It can receive text from:
   //
-  // 1. Microphone
-  // 2. Text input
-  // 3. Send button
-  // 4. Enter key
+  // 1. Text input
+  // 2. Send button
+  // 3. Enter key
   //
-  // Everything eventually comes through this function.
+  // Everything from the text composer eventually comes
+  // through this function.
 
   const sendMessage = async (text) => {
 
@@ -456,6 +417,11 @@ function App() {
         }
       );
 
+      if (!res.ok) {
+        throw new Error(
+          `Chat request failed: ${res.status}`
+        );
+      }
 
       // Convert the backend response from JSON
       const data = await res.json();
@@ -490,215 +456,312 @@ function App() {
           content: 'Unable to connect to IRIS backend.',
         },
       ]);
+
+    } finally {
+
+      // IRIS has finished processing
+      setLoading(false);
     }
-
-
-    // IRIS has finished processing
-    setLoading(false);
   };
 
+  // =========================================================
+  // VOICE REACTIVATION
+  // =========================================================
 
-// =========================================================
-// VOICE INPUT
-// =========================================================
+  const handleVoiceReactivate = async () => {
 
-const listenToUser = async () => {
+    // Don't start another voice session
+    // if IRIS is already listening or speaking
+    if (listening || speaking) return;
 
-  try {
+    try {
 
-    // =======================================================
-    // 1. IRIS STARTS LISTENING
-    // =======================================================
+      // -------------------------------------------------------
+      // STEP 1: REACTIVATE IRIS
+      // -------------------------------------------------------
+      // The backend speaks:
+      //
+      // "Loading IRIS core."
+      // "Hello again, Sir. What are we doing now?"
+      //
+      // Wait for the greeting to finish before
+      // starting the microphone.
 
-    setListening(true);
-    setSpeaking(false);
+      setSpeaking(true);
 
-    setIrisStatus('Listening');
+      addActivity('IRIS is speaking...');
 
-    addActivity('Listening for your command...');
+      const res = await fetch(
+        'http://127.0.0.1:8000/api/voice/reactivate',
+        {
+          method: 'POST',
+        }
+      );
 
 
-    // =======================================================
-    // 2. ASK BACKEND TO LISTEN
-    // =======================================================
+      if (!res.ok) {
 
-    const res = await fetch(
-      'http://127.0.0.1:8000/api/voice',
-      {
-        method: 'POST',
+        throw new Error(
+          `Voice reactivation failed: ${res.status}`
+        );
+
       }
-    );
+
+      // Wait for the backend response
+      await res.json();
 
 
-    if (!res.ok) {
-      throw new Error('Voice request failed');
-    }
+      // -------------------------------------------------------
+      // STEP 2: IRIS FINISHED SPEAKING
+      // -------------------------------------------------------
+
+      setSpeaking(false);
 
 
-    const data = await res.json();
+      // -------------------------------------------------------
+      // STEP 3: START LISTENING
+      // -------------------------------------------------------
 
-
-    // =======================================================
-    // 3. NOTHING HEARD
-    // =======================================================
-
-    if (!data.heard) {
+      addActivity('Awaiting your command...');
 
       setListening(false);
-      setIrisStatus('Ready');
 
       listenToUser();
 
-      return;
-    }
 
+    } catch (error) {
 
-    // =======================================================
-    // 4. USER FINISHED SPEAKING
-    // =======================================================
-
-    setListening(false);
-
-    setIrisStatus('Processing');
-
-    addActivity('Command received');
-
-
-    // Show user's command
-
-    setConversation((prev) => [
-      ...prev,
-      {
-        role: 'user',
-        content: data.heard,
-      },
-    ]);
-
-
-    // =======================================================
-    // 5. STOP / EXIT
-    // =======================================================
-
-    const command =
-      data.heard.toLowerCase().trim();
-
-
-    if (
-      command === 'stop' ||
-      command === 'exit' ||
-      command === 'sleep'
-    ) {
-
-      
-      // IRIS starts speaking
-      setSpeaking(true);
-      setIrisStatus('Speaking');
-      
-      addActivity('IRIS is speaking...');
-      
-      // Speak the local standby response
-      const speakResponse = await fetch(
-        'http://127.0.0.1:8000/api/voice/speak?text=' +
-        encodeURIComponent(data.response),
-        {
-          method: 'POST',
-        }
+      console.error(
+        'IRIS voice reactivation failed:',
+        error
       );
-      
-      if (!speakResponse.ok) {
-        throw new Error('IRIS standby TTS failed');
-      }
-      
-      await speakResponse.json();
-      
-      // IRIS finished speaking
+
       setSpeaking(false);
       setListening(false);
-      
-      setIrisStatus('Ready');
-      setStandby(true);
 
-      // Show IRIS's standby response
-      setConversation((prev) => [
-        ...prev,
-        {
-          role: 'iris',
-          content: data.response,
-        },
-      ]);
-
-      return;
+      addActivity('Voice reactivation failed');
     }
+  };
 
-    // =======================================================
-    // 6. IRIS RESPONSE
-    // =======================================================
+  // =========================================================
+  // DYNAMIC SYSTEM HEALTH
+  // =========================================================
+  //
+  // React periodically asks FastAPI for the current
+  // system health.
+  //
+  // One request updates all system statuses:
+  // Backend + Database + Voice + Activity
+  // =========================================================
 
-    if (data.response) {
+  const checkSystemHealth = useCallback(async () => {
 
-      // =====================================================
-      // IRIS STARTS SPEAKING
-      // =====================================================
-      setSpeaking(true);
-      setIrisStatus('Speaking');
-      addActivity('IRIS is speaking...');
-      // =====================================================
-      // IRIS SPEAKS THE RESPONSE
-      // =====================================================
-      const speakResponse = await fetch(
-        'http://127.0.0.1:8000/api/voice/speak?text=' +
-          encodeURIComponent(data.response),
-        {
-          method: 'POST',
-        }
+    try {
+
+      const response = await fetch(
+        'http://127.0.0.1:8000/api/health'
       );
 
-      if (!speakResponse.ok) {
-        throw new Error('IRIS TTS failed');
+      if (!response.ok) {
+        throw new Error('Backend unavailable');
       }
 
-      await speakResponse.json();
+      const data = await response.json();
+
 
       // =====================================================
-      // IRIS FINISHED SPEAKING
-      // =====================================================
-      setSpeaking(false);
-
-      // =====================================================
-      // NOW SHOW THE RESPONSE
+      // BACKEND STATUS
       // =====================================================
 
-      setConversation((prev) => [
-        ...prev,
-        {
-          role: 'iris',
-          content: data.response,
-        },
-      ]);
-      setIrisStatus('Ready');
+      const currentBackendStatus =
+        data.backend === 'online'
+          ? 'online'
+          : 'offline';
 
-      addActivity('Awaiting your command...');
+      setBackendStatus(currentBackendStatus);
+
+
+      // =====================================================
+      // DATABASE STATUS
+      // =====================================================
+
+      const currentDatabaseStatus =
+        data.database === 'connected'
+          ? 'connected'
+          : 'disconnected';
+
+      setDatabaseStatus(currentDatabaseStatus);
+
+
+      // =====================================================
+      // VOICE ENGINE STATUS
+      // =====================================================
+      // For now, the voice engine is considered ready
+      // whenever the backend is online.
+
+      const currentVoiceStatus =
+        data.backend === 'online'
+          ? 'ready'
+          : 'offline';
+
+      setVoiceStatus(currentVoiceStatus);
+
+      // =====================================================
+      // ACTIVITY PANEL
+      // =====================================================
+      // Only update the activity panel when the combined
+      // system health actually changes.
+
+      const currentSystemStatus = [
+        currentBackendStatus,
+        currentDatabaseStatus,
+        currentVoiceStatus
+      ].join('|');
+
+
+      if (
+        previousSystemStatus.current !==
+        currentSystemStatus
+      ) {
+
+        if (currentBackendStatus === 'online') {
+
+          setActivities([
+            'Interface initialized',
+            'Backend connected',
+            currentDatabaseStatus === 'connected'
+              ? 'Database connected'
+              : 'Database disconnected',
+            currentVoiceStatus === 'ready'
+              ? 'Voice engine ready'
+              : 'Voice engine offline',
+            'Awaiting your command...'
+          ]);
+
+        } else {
+
+          setActivities([
+            'Interface initialized',
+            'Backend connection lost',
+            'Database disconnected',
+            'Voice engine offline',
+            'System offline'
+          ]);
+        }
+
+        previousSystemStatus.current =
+          currentSystemStatus;
+      }
+
+
+    } catch (error) {
+
+      console.error(
+        'System health check failed:',
+        error
+      );
+
+      // =====================================================
+      // IF FASTAPI CANNOT BE REACHED
+      // =====================================================
+
+      setBackendStatus('offline');
+      setDatabaseStatus('disconnected');
+      setVoiceStatus('offline');
+
+
+      const offlineSystemStatus =
+        'offline|disconnected|offline';
+
+
+      // Only update Activity if we weren't already offline.
+
+      if (
+        previousSystemStatus.current !==
+        offlineSystemStatus
+      ) {
+
+        setActivities([
+          'Interface initialized',
+          'Backend connection lost',
+          'Database disconnected',
+          'Voice engine offline',
+          'System offline'
+        ]);
+
+        previousSystemStatus.current =
+          offlineSystemStatus;
+      }
     }
-    // =======================================================
-    // 7. LISTEN AGAIN
-    // =======================================================
 
-    listenToUser();
+  }, []);
+
+  // =========================================================
+  // EFFECTS
+  // =========================================================
+
+  // =========================================================
+  // IRIS STARTUP SEQUENCE
+  // =========================================================
+
+  useEffect(() => {
+
+    // Wait for the startup animation to finish
+    if (showStartup) return;
+
+    // Prevent the startup sequence from running more than once
+    if (startupRef.current) return;
+
+    startupRef.current = true;
+
+    startIRIS();
+
+  }, [showStartup, startIRIS]);
 
 
-  } catch (error) {
+  // =========================================================
+  // CONVERSATION AUTO-SCROLL
+  // =========================================================
 
-    console.error(
-      'Voice command failed:',
-      error
+  useEffect(() => {
+
+    conversationEndRef.current?.scrollIntoView({
+      behavior: 'smooth',
+    });
+
+  }, [conversation]);
+
+  // =========================================================
+  // SYSTEM HEALTH MONITORING
+  // =========================================================
+
+  useEffect(() => {
+    // =========================================================
+    // INITIAL CHECK
+    // =========================================================
+
+    checkSystemHealth();
+
+    // =========================================================
+    // CONTINUOUS CHECK
+    // =========================================================
+    // Recheck every 5 seconds so the dashboard can detect
+    // backend/database changes without refreshing the page.
+
+    const interval = setInterval(
+      checkSystemHealth,
+      5000
     );
 
-    setSpeaking(false);
-    setListening(false);
+    // =========================================================
+    // CLEANUP
+    // =========================================================
+    // Stop the interval when App is unmounted.
 
-    setIrisStatus('Ready');
-  }
-};
+    return () => clearInterval(interval);
+
+  }, [checkSystemHealth]);
+
 
   // =========================================================
   // USER INTERFACE
@@ -707,21 +770,17 @@ const listenToUser = async () => {
   return (
     <div className="iris-app">
 
-
       {/* =====================================================
           ANIMATED BACKGROUND
       ===================================================== */}
-
       <div
         className="energy-background"
         aria-hidden="true"
       >
-
         <svg
           viewBox="0 0 1600 900"
           preserveAspectRatio="none"
         >
-
           <defs>
 
             {/* Gradient used by the energy lines */}
@@ -738,7 +797,6 @@ const listenToUser = async () => {
                 offset="0%"
                 stopColor="#00d9ff"
               />
-
               <stop
                 offset="50%"
                 stopColor="#4777ff"
@@ -748,9 +806,7 @@ const listenToUser = async () => {
                 offset="100%"
                 stopColor="#9b5cff"
               />
-
             </linearGradient>
-
 
             {/* Glow effect applied to energy lines */}
 
@@ -762,15 +818,10 @@ const listenToUser = async () => {
               />
 
               <feMerge>
-
                 <feMergeNode in="blur" />
-
                 <feMergeNode in="SourceGraphic" />
-
               </feMerge>
-
             </filter>
-
           </defs>
 
 
@@ -786,7 +837,6 @@ const listenToUser = async () => {
             "
           />
 
-
           {/* Top-right energy stream */}
 
           <path
@@ -798,7 +848,6 @@ const listenToUser = async () => {
               C 780 450, 620 500, 470 430
             "
           />
-
 
           {/* Bottom-left energy stream */}
 
@@ -812,9 +861,7 @@ const listenToUser = async () => {
             "
           />
 
-
           {/* Bottom-right energy stream */}
-
           <path
             className="energy-line line-4"
             d="
@@ -824,7 +871,6 @@ const listenToUser = async () => {
               C 780 360, 620 350, 470 420
             "
           />
-
 
           {/* Additional upper energy stream */}
 
@@ -838,7 +884,6 @@ const listenToUser = async () => {
             "
           />
 
-
           {/* Additional lower energy stream */}
 
           <path
@@ -850,31 +895,22 @@ const listenToUser = async () => {
               C 540 440, 400 520, 220 700
             "
           />
-
         </svg>
-
       </div>
-
 
       {/* =====================================================
           HEADER
       ===================================================== */}
 
       <header className="iris-header">
-
         <div className="iris-brand">
-
           <h1>IRIS</h1>
-
           <span>
             An intelligent interactive AI system
           </span>
-
         </div>
 
-
         <div className="system-status">
-
           <span>
             ●
           </span>
@@ -885,9 +921,7 @@ const listenToUser = async () => {
             ? "SYSTEM CHECKING"
             : "SYSTEM OFFLINE"
           }
-
         </div>
-
       </header>
       
       {/* =========================================================
@@ -917,20 +951,14 @@ const listenToUser = async () => {
 
       <main className="dashboard">
 
-
         {/* ===================================================
             SYSTEM STATUS PANEL
         =================================================== */}
 
         <section className="panel left-panel">
-
           <h2>SYSTEM STATUS</h2>
-
-
           <div className="status-row">
-
             <span>Backend</span>
-
             <span
               className={
                 backendStatus === "online"
@@ -940,7 +968,6 @@ const listenToUser = async () => {
                   : "offline"
               }
             >
-
               ● {
                 backendStatus === "online"
                   ? "Online"
@@ -948,16 +975,11 @@ const listenToUser = async () => {
                   ? "Checking..."
                   : "Offline"
               }
-
             </span>
-
           </div>
 
-
           <div className="status-row">
-
             <span>Database</span>
-
             <span
               className={
                 databaseStatus === "connected"
@@ -967,7 +989,6 @@ const listenToUser = async () => {
                   : "offline"
               }
             >
-
               ● {
                 databaseStatus === "connected"
                   ? "Connected"
@@ -975,16 +996,11 @@ const listenToUser = async () => {
                   ? "Checking..."
                   : "Disconnected"
               }
-
             </span>
-
           </div>
 
-
           <div className="status-row">
-
             <span>Voice Engine</span>
-
             <span
               className={
                 voiceStatus === "ready"
@@ -994,7 +1010,6 @@ const listenToUser = async () => {
                   : "offline"
               }
             >
-
               ● {
                 voiceStatus === "ready"
                   ? "Ready"
@@ -1002,22 +1017,16 @@ const listenToUser = async () => {
                   ? "Initializing..."
                   : "Offline"
               }
-
             </span>
-
           </div>
-
         </section>
-
 
         {/* ===================================================
             IRIS CORE
         =================================================== */}
-
         <section className="iris-core-section">
 
           <div className="iris-core">
-
 
             {/* =================================================
                 LISTENING SONAR
@@ -1027,17 +1036,11 @@ const listenToUser = async () => {
             */}
 
             {listening && !speaking && (
-
               <>
-
                 <div className="sonar-ring ring-1"></div>
-
                 <div className="sonar-ring ring-2"></div>
-
                 <div className="sonar-ring ring-3"></div>
-
               </>
-
             )}
 
 
@@ -1086,11 +1089,9 @@ const listenToUser = async () => {
                   "
                 />
 
-
                 {/* =============================================
                     MIDDLE CURLY RING
                     ============================================= */}
-
                 <path
                   className="speaking-circle speaking-circle-2"
                   d="
@@ -1120,7 +1121,6 @@ const listenToUser = async () => {
                     C 234 111, 242 108, 250 105
                   "
                 />
-
 
                 {/* =============================================
                     OUTER CURLY RING
@@ -1155,15 +1155,12 @@ const listenToUser = async () => {
                     C 222 80, 235 70, 250 65
                   "
                 />
-
               </svg>
             )}
-
 
             {/* =================================================
                 IRIS ORB
             ================================================= */}
-
             <img
               src="/iris-favicon.png"
               alt="IRIS"
@@ -1177,29 +1174,19 @@ const listenToUser = async () => {
                       : ''
               }`}
             />
-
           </div>
-
 
           <div className="iris-title">
-
             <span>I</span>
-
             <span>R</span>
-
             <span>I</span>
-
             <span>S</span>
-
           </div>
-
 
           <p>
             YOUR INTELLIGENT ASSISTANT
           </p>
-
         </section>
-
 
         {/* ===================================================
             ACTIVITY PANEL
@@ -1208,61 +1195,41 @@ const listenToUser = async () => {
         <section className="panel activity-panel">
 
           <h2>ACTIVITY</h2>
-
           {activities.map((activity, index) => (
 
             <div
               className="activity-item"
               key={index}
             >
-
               <span>●</span>
-
               <span>{activity}</span>
-
             </div>
-
           ))}
-
         </section>
-
 
         {/* ===================================================
             CURRENT CONTEXT
         =================================================== */}
 
         <section className="panel left-panel">
-
           <h2>CURRENT CONTEXT</h2>
-
           <div className="status-row">
-
             <span>User</span>
-
             <span>Mandeep</span>
-
           </div>
-
 
           <div className="status-row">
-
             <span>Language</span>
-
             <span>English</span>
-
           </div>
-
         </section>
-
 
         {/* ===================================================
             VOICE PANEL
         =================================================== */}
-
         <section className="panel voice-panel">
 
           <h2>VOICE</h2>
-
 
           <button
             className={`microphone ${
@@ -1272,120 +1239,26 @@ const listenToUser = async () => {
                   ? 'mic-speaking'
                   : ''
             }`}
-
-            onClick={async () => {
-
-              // Don't start another voice session
-              // if IRIS is already listening
-              if (listening) return;
-
-
-              try {
-
-                // -------------------------------------------------------
-                // STEP 1: REACTIVATE IRIS
-                // -------------------------------------------------------
-                // The backend speaks:
-                //
-                // "Loading IRIS core."
-                // "Hello again, Sir. What are we doing now?"
-                //
-                // Wait for the greeting to finish before
-                // starting the microphone.
-
-                setSpeaking(true);
-
-                setIrisStatus('Speaking');
-
-                addActivity('IRIS is speaking...');
-
-
-                const res = await fetch(
-                  'http://127.0.0.1:8000/api/voice/reactivate',
-                  {
-                    method: 'POST',
-                  }
-                );
-
-
-                if (!res.ok) {
-
-                  throw new Error(
-                    `Voice reactivation failed: ${res.status}`
-                  );
-
-                }
-
-
-                // Wait for the backend response
-                await res.json();
-
-
-                // -------------------------------------------------------
-                // STEP 2: IRIS FINISHED SPEAKING
-                // -------------------------------------------------------
-
-                setSpeaking(false);
-
-
-                // -------------------------------------------------------
-                // STEP 3: START LISTENING
-                // -------------------------------------------------------
-
-                setIrisStatus('Ready');
-
-                addActivity('Awaiting your command...');
-
-                setListening(false);
-
-                listenToUser();
-
-
-              } catch (error) {
-
-                console.error(
-                  "IRIS voice reactivation failed:",
-                  error
-                );
-
-                setSpeaking(false);
-
-                setListening(false);
-
-                setIrisStatus('Ready');
-
-              }
-
-            }}
+            onClick={handleVoiceReactivate}
           >
-
             🎙
-
           </button>
 
-
           <p>
-
             {speaking
               ? 'Speaking...'
               : listening
                 ? 'Listening...'
                 : 'Ready'
             }
-
           </p>
-
         </section>
-
 
         {/* ===================================================
             CONVERSATION PANEL
         =================================================== */}
-
         <section className="panel conversation-panel">
-
           <h2>CONVERSATION</h2>
-
 
           <div className="conversation-list">
 
@@ -1411,58 +1284,39 @@ const listenToUser = async () => {
 
                 </div>
 
-
                 <div>
-
                   <p>
                     <strong>
                       {msg.role === 'user' ? 'YOU:' : 'IRIS:'}
                     </strong>{' '}
                     {msg.content}
                   </p>
-
                 </div>
-
               </div>
-
             ))}
-
 
             {/* Show this temporary message while IRIS
                 is waiting for the backend response */}
 
             {loading && (
-
               <div className="message iris-message">
-
                 <div className="message-icon">
                   ◉
                 </div>
-
                 <div>
-
                   <p>
                     IRIS is thinking...
                   </p>
-
                 </div>
-
               </div>
-
             )}
-
 
             {/* Invisible reference used for automatic
                 scrolling to the newest conversation message */}
-
             <div ref={conversationEndRef} />
-
           </div>
-
         </section>
-
       </main>
-
 
       {/* =====================================================
           INPUT / COMMAND COMPOSER
@@ -1478,30 +1332,22 @@ const listenToUser = async () => {
           type="text"
           placeholder="Ask IRIS something..."
           value={message}
-
           // Update message state whenever the user types
           onChange={(e) => setMessage(e.target.value)}
-
           // Pressing Enter sends the message
           onKeyDown={(e) => {
-
             if (
               e.key === 'Enter' &&
               !e.shiftKey
             ) {
-
               e.preventDefault();
-
               e.currentTarget.parentElement
                 .querySelector('.send-button')
                 ?.click();
-
             }
-
           }}
 
         />
-
 
         {/* ===================================================
             SEND BUTTON
@@ -1509,17 +1355,12 @@ const listenToUser = async () => {
 
         <button
           className="send-button"
-
           // Send whatever is currently in the text box
           onClick={() => sendMessage(message)}
         >
-
           ➤
-
         </button>
-
       </footer>
-
     </div>
   );
 }
