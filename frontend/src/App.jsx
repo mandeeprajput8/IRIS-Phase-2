@@ -933,6 +933,7 @@ function App() {
 
           <video
             autoPlay
+            muted
             playsInline
             onEnded={() => setShowStartup(false)}
           >

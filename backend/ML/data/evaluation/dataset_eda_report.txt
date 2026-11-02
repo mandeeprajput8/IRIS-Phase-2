@@ -1,0 +1,81 @@
+IRIS EMOTION MODEL V2
+EXPLORATORY DATA ANALYSIS REPORT
+============================================================
+
+Total samples: 8018
+Emotion classes: 6
+Scenario categories: 29
+
+SENTENCE LENGTH STATISTICS
+        word_count  character_count
+count  8018.000000      8018.000000
+mean     17.891993        96.145797
+std       3.518487        16.527903
+min       8.000000        43.000000
+25%      15.000000        85.000000
+50%      18.000000        95.000000
+75%      20.000000       107.000000
+max      33.000000       168.000000
+
+AVERAGE LENGTH PER EMOTION
+            word_count  character_count
+emotion                                
+angry            18.18            97.55
+anxious          20.13           106.18
+frustrated       19.02           105.78
+happy            16.27            88.33
+neutral          15.32            84.94
+sad              19.60           100.32
+
+EMOTION DISTRIBUTION
+   emotion  samples  percentage
+     happy     1628       20.30
+   neutral     1556       19.41
+       sad     1341       16.72
+   anxious     1235       15.40
+     angry     1164       14.52
+frustrated     1094       13.64
+
+SCENARIO DISTRIBUTION
+   emotion                scenario  samples
+     angry                betrayal      226
+     angry              boundaries      250
+     angry                conflict      229
+     angry              disrespect      228
+     angry              unfairness      231
+   anxious   career_and_interviews      247
+   anxious       exams_and_studies      256
+   anxious health_and_safety_worry      244
+   anxious                  social      242
+   anxious             uncertainty      246
+frustrated           communication      235
+frustrated           daily_hassles      200
+frustrated    delays_and_processes      215
+frustrated      repeated_obstacles      226
+frustrated      technical_problems      218
+     happy             achievement      396
+     happy     future_anticipation      287
+     happy               good_news      300
+     happy           relationships      321
+     happy              small_joys      324
+   neutral          everyday_plans      316
+   neutral         factual_updates      310
+   neutral    general_observations      310
+   neutral    information_requests      304
+   neutral            instructions      316
+       sad          disappointment      270
+       sad              loneliness      270
+       sad          loss_and_grief      267
+       sad               nostalgia      263
+       sad           relationships      271
+
+DATA QUALITY FLAGS
+Samples below 10 words: 48
+Samples above 30 words: 4
+Near-duplicate pairs: 7027
+Similarity clusters: 1781
+Sentences in similarity clusters: 6629
+Cross-emotion similar pairs: 0
+Most frequent opening frequency: 483
+
+Similarity results are candidate matches, not confirmed duplicates.

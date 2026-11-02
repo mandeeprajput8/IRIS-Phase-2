@@ -1,0 +1,20 @@
+IRIS EMOTION MODEL V2
+DATASET PREPROCESSING AUDIT
+============================================================
+
+Generated: 2026-11-02 15:01:47.515282
+
+Original samples: 9000
+Missing records removed: 0
+Empty text records removed: 0
+Invalid labels removed: 0
+Invalid labels: {}
+Conflicting duplicate records removed: 0
+Same-label duplicates removed: 982
+Final samples: 8018
+Total samples removed: 982
+Final emotion distribution: {'happy': 1628, 'neutral': 1556, 'sad': 1341, 'anxious': 1235, 'angry': 1164, 'frustrated': 1094}
+
+Raw dataset was never modified.
+Text normalization was used only for duplicate checks.
+Near-duplicate candidates were not automatically removed.

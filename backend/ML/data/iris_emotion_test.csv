@@ -1,0 +1,1201 @@
+text,emotion,scenario,generation_group,scenario_id
+I feel lucky that you are offered a chance to try something new.,happy,hope,happy_frame_22,SCN0222
+How is it fair that someone makes a cruel joke at another person's expense?,angry,disrespect,angry_frame_19,SCN0144
+I feel lucky that you find a quiet place after a busy day.,happy,everyday,happy_frame_22,SCN0172
+I keep replaying what might happen if you wait to hear whether everyone arrived safely.,anxious,safety,anxious_frame_16,SCN0491
+This is becoming so frustrating: a form has to be completed all over again.,frustrated,hassles,frustrated_frame_02,SCN0177
+That gave me a real sense of joy: you receive a thoughtful note.,happy,relationships,happy_frame_25,SCN0450
+There's a knot in my stomach when you wonder whether something you said offended someone.,anxious,social,anxious_frame_08,SCN0533
+I feel lucky that an application is accepted.,happy,achievement,happy_frame_22,SCN0022
+The usual procedure is that the class begins after the lunch break.,neutral,schedule,neutral_frame_16,SCN0516
+There's a knot in my stomach when you worry that you forgot something important.,anxious,social,anxious_frame_08,SCN0533
+I'm not willing to tolerate this anymore: someone manipulates a situation.,angry,betrayal,angry_frame_16,SCN0041
+I can't believe anyone thought it was okay that a person mocks a boundary you stated.,angry,disrespect,angry_frame_09,SCN0134
+The usual procedure is that the presentation contains several diagrams.,neutral,observation,neutral_frame_16,SCN0366
+"For today's plan, the shelves are made of pine wood.",neutral,routine,neutral_frame_19,SCN0469
+I'm finding it hard to switch off because you travel somewhere unfamiliar after dark.,anxious,safety,anxious_frame_09,SCN0484
+I'm going round in circles because the item you need is out of stock again.,frustrated,hassles,frustrated_frame_09,SCN0184
+"At the moment, the delivery is expected between noon and two.",neutral,schedule,neutral_frame_15,SCN0515
+I feel lucky that a family member reaches a long-term goal.,happy,relationships,happy_frame_22,SCN0447
+This is becoming so frustrating: a process gets stuck at the final step.,frustrated,obstacles,frustrated_frame_02,SCN0377
+I felt completely deflated when you look at photographs from a time you cannot revisit.,sad,loss,sad_frame_14,SCN0314
+Something feels missing now that you wish someone would notice you are struggling.,sad,loneliness,sad_frame_19,SCN0294
+I'm not willing to tolerate this anymore: a vulnerable person is taken advantage of.,angry,injustice,angry_frame_16,SCN0266
+"I just want to finish, but a form has to be completed all over again.",frustrated,hassles,frustrated_frame_24,SCN0199
+"At the moment, the train leaves from platform four at 8:15.",neutral,schedule,neutral_frame_15,SCN0515
+I hadn't realised how much I wanted this until someone welcomes you after a long absence.,happy,relationships,happy_frame_23,SCN0448
+There's a knot in my stomach when you wait for an important reply.,anxious,uncertainty,anxious_frame_08,SCN0558
+I'm going round in circles because several small problems pile up in one day.,frustrated,hassles,frustrated_frame_09,SCN0184
+I've had enough of this; a decision turns out to be dishonest.,angry,injustice,angry_frame_03,SCN0253
+I'm finding it hard to switch off because you think about a difficult conversation tomorrow.,anxious,social,anxious_frame_09,SCN0534
+I'm finding it hard to switch off because you prepare for a difficult conversation.,anxious,performance,anxious_frame_09,SCN0409
+I've felt low since you work hard but still fall short.,sad,disappointment,sad_frame_01,SCN0101
+"At the moment, the parcel was left beside the front door.",neutral,observation,neutral_frame_15,SCN0365
+There's a knot in my stomach when you travel somewhere unfamiliar after dark.,anxious,safety,anxious_frame_08,SCN0483
+"For today's plan, you prepare rice and lentils for lunch.",neutral,routine,neutral_frame_19,SCN0469
+"For today's plan, you put the documents in the top drawer.",neutral,routine,neutral_frame_19,SCN0469
+I wish things had gone differently when the outcome differs from what you hoped.,sad,disappointment,sad_frame_03,SCN0103
+"I looked it up, and the booking is listed under my email address.",neutral,schedule,neutral_frame_17,SCN0517
+How is it fair that a person keeps pushing after you say no?,angry,boundaries,angry_frame_19,SCN0094
+I've been imagining all the things that could happen if you worry that you forgot something important.,anxious,social,anxious_frame_13,SCN0538
+"I had hoped for a different outcome, but someone else's loss reminds you of your own.",sad,vulnerability,sad_frame_20,SCN0595
+What a lovely surprise that an application is accepted.,happy,achievement,happy_frame_08,SCN0008
+This is becoming so frustrating: you are ready to act but lack resources.,frustrated,blocked goals,frustrated_frame_02,SCN0052
+"I looked it up, and the museum is closed every Monday.",neutral,schedule,neutral_frame_17,SCN0517
+I'm getting nowhere because you miss a connection because a service was late.,frustrated,hassles,frustrated_frame_01,SCN0176
+That crosses a line: someone makes a cruel joke at another person's expense.,angry,disrespect,angry_frame_08,SCN0133
+I keep hitting the same wall: you explain the same point but are misunderstood.,frustrated,miscommunication,frustrated_frame_21,SCN0346
+I keep replaying what might happen if you need help but fear rejection.,anxious,social,anxious_frame_16,SCN0541
+That crosses a line: a person denies something they clearly said.,angry,betrayal,angry_frame_08,SCN0033
+The notice states that you prepare rice and lentils for lunch.,neutral,routine,neutral_frame_06,SCN0456
+"At the moment, the notice lists the participants' names.",neutral,observation,neutral_frame_15,SCN0365
+I'm genuinely glad that you get the last seat on a crowded train.,happy,everyday,happy_frame_09,SCN0159
+The notice states that the museum is closed every Monday.,neutral,schedule,neutral_frame_06,SCN0506
+That crosses a line: a person keeps pushing after you say no.,angry,boundaries,angry_frame_08,SCN0083
+I felt completely deflated when a promise you believed in will not be kept.,sad,loss,sad_frame_14,SCN0314
+I've felt low since your effort goes unnoticed.,sad,disappointment,sad_frame_01,SCN0101
+There's a knot in my stomach when you worry about making a mistake publicly.,anxious,performance,anxious_frame_08,SCN0408
+I keep hitting the same wall: you cannot find information needed to continue.,frustrated,blocked goals,frustrated_frame_21,SCN0071
+There's a knot in my stomach when you need help but fear rejection.,anxious,social,anxious_frame_08,SCN0533
+I'm not willing to tolerate this anymore: private information is shared without permission.,angry,disrespect,angry_frame_16,SCN0141
+I've been imagining all the things that could happen if you replay an awkward conversation.,anxious,social,anxious_frame_13,SCN0538
+I've had enough of this; someone manipulates a situation.,angry,betrayal,angry_frame_03,SCN0028
+"I just want to finish, but your plans are delayed by something outside your control.",frustrated,blocked goals,frustrated_frame_24,SCN0074
+I'm going round in circles because your question receives an unrelated answer.,frustrated,miscommunication,frustrated_frame_09,SCN0334
+"I just want to finish, but automated support sends you in circles.",frustrated,obstacles,frustrated_frame_24,SCN0399
+I'm not willing to tolerate this anymore: someone uses your belongings without asking.,angry,boundaries,angry_frame_16,SCN0091
+I've had enough of this; a trusted person spreads rumours about you.,angry,betrayal,angry_frame_03,SCN0028
+That crosses a line: you are blamed before anyone asks what happened.,angry,disrespect,angry_frame_08,SCN0133
+I hadn't realised how much I wanted this until you finish a task you kept postponing.,happy,achievement,happy_frame_23,SCN0023
+I've felt low since you feel far from people who understand you.,sad,loneliness,sad_frame_01,SCN0276
+I've had enough of this; someone makes a cruel joke at another person's expense.,angry,disrespect,angry_frame_03,SCN0128
+There's a knot in my stomach when you join a group where everyone knows each other.,anxious,social,anxious_frame_08,SCN0533
+I've felt low since you have nobody nearby to share a memory with.,sad,loneliness,sad_frame_01,SCN0276
+I'm going round in circles because you are ready to act but lack resources.,frustrated,blocked goals,frustrated_frame_09,SCN0059
+"I had hoped for a different outcome, but the outcome differs from what you hoped.",sad,disappointment,sad_frame_20,SCN0120
+"I looked it up, and the delivery is expected between noon and two.",neutral,schedule,neutral_frame_17,SCN0517
+I hadn't realised how much I wanted this until a difficult situation starts improving.,happy,hope,happy_frame_23,SCN0223
+I'm genuinely glad that a small plan works out smoothly.,happy,everyday,happy_frame_09,SCN0159
+I feel lucky that a small plan works out smoothly.,happy,everyday,happy_frame_22,SCN0172
+I wish things had gone differently when you face a difficult week without support.,sad,loneliness,sad_frame_03,SCN0278
+I've been imagining all the things that could happen if someone asks a question when you are unprepared.,anxious,performance,anxious_frame_13,SCN0413
+I felt completely deflated when you work hard but still fall short.,sad,disappointment,sad_frame_14,SCN0114
+The notice states that the shop accepts cash and card payments.,neutral,information,neutral_frame_06,SCN0231
+I felt completely deflated when you face a difficult week without support.,sad,loneliness,sad_frame_14,SCN0289
+"I had hoped for a different outcome, but a relationship ends despite your efforts.",sad,loss,sad_frame_20,SCN0320
+The notice states that the meeting notes are saved in the shared folder.,neutral,information,neutral_frame_06,SCN0231
+"At the moment, the form asks for a contact number and address.",neutral,information,neutral_frame_15,SCN0240
+What a lovely surprise that a stranger offers a kind gesture.,happy,everyday,happy_frame_08,SCN0158
+That crosses a line: a promise is broken when others depend on it.,angry,injustice,angry_frame_08,SCN0258
+I'm not willing to tolerate this anymore: someone takes credit for your work.,angry,disrespect,angry_frame_16,SCN0141
+I keep hitting the same wall: different people give conflicting information.,frustrated,miscommunication,frustrated_frame_21,SCN0346
+What a lovely surprise that you make plans you are excited about.,happy,hope,happy_frame_08,SCN0208
+I've had enough of this; a person knowingly breaks your trust.,angry,betrayal,angry_frame_03,SCN0028
+How is it fair that someone knowingly crosses a line?,angry,boundaries,angry_frame_19,SCN0094
+Something feels missing now that you work hard but still fall short.,sad,disappointment,sad_frame_19,SCN0119
+This is becoming so frustrating: you explain the same point but are misunderstood.,frustrated,miscommunication,frustrated_frame_02,SCN0327
+This is becoming so frustrating: nobody can explain a process clearly.,frustrated,miscommunication,frustrated_frame_02,SCN0327
+I'm going round in circles because you miss a connection because a service was late.,frustrated,hassles,frustrated_frame_09,SCN0184
+"For today's plan, the road is being repaired near the crossing.",neutral,observation,neutral_frame_19,SCN0369
+I'm finding it hard to switch off because you join a group where everyone knows each other.,anxious,social,anxious_frame_09,SCN0534
+I'm genuinely glad that you receive a thoughtful note.,happy,relationships,happy_frame_09,SCN0434
+What if things go wrong because you join a group where everyone knows each other?,anxious,social,anxious_frame_05,SCN0530
+I hadn't realised how much I wanted this until the rain stops just as you leave.,happy,everyday,happy_frame_23,SCN0173
+I've felt low since a song brings back memories of someone you lost.,sad,loss,sad_frame_01,SCN0301
+That gave me a real sense of joy: a family member reaches a long-term goal.,happy,relationships,happy_frame_25,SCN0450
+I wish things had gone differently when you admit you are still affected by what happened.,sad,vulnerability,sad_frame_03,SCN0578
+What if things go wrong because the outcome is impossible to predict?,anxious,uncertainty,anxious_frame_05,SCN0555
+I keep replaying what might happen if you replay an awkward conversation.,anxious,social,anxious_frame_16,SCN0541
+I'm genuinely glad that something you nearly gave up on works out.,happy,hope,happy_frame_09,SCN0209
+I keep replaying what might happen if you are responsible for a high-stakes task.,anxious,performance,anxious_frame_16,SCN0416
+What if things go wrong because several possible outcomes keep running through your mind?,anxious,uncertainty,anxious_frame_05,SCN0555
+I'm not willing to tolerate this anymore: your refusal becomes an argument.,angry,boundaries,angry_frame_16,SCN0091
+I feel lucky that a stranger offers a kind gesture.,happy,everyday,happy_frame_22,SCN0172
+What a lovely surprise that you notice your own progress.,happy,achievement,happy_frame_08,SCN0008
+I'm not willing to tolerate this anymore: a person mocks a boundary you stated.,angry,disrespect,angry_frame_16,SCN0141
+I'm finding it hard to switch off because you think people might be judging you.,anxious,social,anxious_frame_09,SCN0534
+That gave me a real sense of joy: you make plans you are excited about.,happy,hope,happy_frame_25,SCN0225
+I've felt low since you wonder how things could have gone differently.,sad,vulnerability,sad_frame_01,SCN0576
+I'm not willing to tolerate this anymore: your work is dismissed without being heard.,angry,disrespect,angry_frame_16,SCN0141
+Something feels missing now that you hold back tears during a conversation.,sad,vulnerability,sad_frame_19,SCN0594
+I'm genuinely glad that you finally understand a difficult idea.,happy,achievement,happy_frame_09,SCN0009
+I felt completely deflated when the outcome differs from what you hoped.,sad,disappointment,sad_frame_14,SCN0114
+"I looked it up, and the kitchen window faces the courtyard.",neutral,routine,neutral_frame_17,SCN0467
+I keep hitting the same wall: someone will not listen while you clarify a problem.,frustrated,miscommunication,frustrated_frame_21,SCN0346
+This is becoming so frustrating: you cannot move forward because someone has not replied.,frustrated,blocked goals,frustrated_frame_02,SCN0052
+I'm finding it hard to switch off because you wonder whether you misunderstood something.,anxious,uncertainty,anxious_frame_09,SCN0559
+What a lovely surprise that you solve a problem that seemed impossible.,happy,achievement,happy_frame_08,SCN0008
+I'm going round in circles because someone will not listen while you clarify a problem.,frustrated,miscommunication,frustrated_frame_09,SCN0334
+I'm getting nowhere because nobody can explain a process clearly.,frustrated,miscommunication,frustrated_frame_01,SCN0326
+I felt completely deflated when you have to let go of a goal.,sad,disappointment,sad_frame_14,SCN0114
+I've felt low since you are left out of something meaningful.,sad,disappointment,sad_frame_01,SCN0101
+I'm going round in circles because a problem returns after you fix it.,frustrated,obstacles,frustrated_frame_09,SCN0384
+This is becoming so frustrating: your question receives an unrelated answer.,frustrated,miscommunication,frustrated_frame_02,SCN0327
+This is becoming so frustrating: you try the same solution repeatedly and get nowhere.,frustrated,obstacles,frustrated_frame_02,SCN0377
+I keep hitting the same wall: you clean up a mess someone repeatedly leaves.,frustrated,hassles,frustrated_frame_21,SCN0196
+I can't believe anyone thought it was okay that someone deliberately lies to you.,angry,betrayal,angry_frame_09,SCN0034
+What if things go wrong because you prepare for a change you did not choose?,anxious,uncertainty,anxious_frame_05,SCN0555
+I keep hitting the same wall: a form has to be completed all over again.,frustrated,hassles,frustrated_frame_21,SCN0196
+"For today's plan, the library has computers on the first floor.",neutral,information,neutral_frame_19,SCN0244
+I can't believe anyone thought it was okay that you are expected to tolerate insults.,angry,boundaries,angry_frame_09,SCN0084
+There's a knot in my stomach when someone asks a question when you are unprepared.,anxious,performance,anxious_frame_08,SCN0408
+That gave me a real sense of joy: you arrive home to a meal someone made.,happy,everyday,happy_frame_25,SCN0175
+I'm finding it hard to switch off because someone who should be home is not answering.,anxious,safety,anxious_frame_09,SCN0484
+"I just want to finish, but you cannot move forward because someone has not replied.",frustrated,blocked goals,frustrated_frame_24,SCN0074
+That gave me a real sense of joy: someone gives you reassuring news.,happy,hope,happy_frame_25,SCN0225
+"I just want to finish, but people you need never respond on time.",frustrated,blocked goals,frustrated_frame_24,SCN0074
+"I just want to finish, but avoidable delays hold up your progress.",frustrated,blocked goals,frustrated_frame_24,SCN0074
+That crosses a line: a decision turns out to be dishonest.,angry,injustice,angry_frame_08,SCN0258
+I'm not willing to tolerate this anymore: a hurtful comment continues after you object.,angry,boundaries,angry_frame_16,SCN0091
+The usual procedure is that the report is due on the last working day of the month.,neutral,schedule,neutral_frame_16,SCN0516
+"I just want to finish, but you explain the same point but are misunderstood.",frustrated,miscommunication,frustrated_frame_24,SCN0349
+Something feels missing now that a relationship ends despite your efforts.,sad,loss,sad_frame_19,SCN0319
+How is it fair that a decision turns out to be dishonest?,angry,injustice,angry_frame_19,SCN0269
+I felt completely deflated when you try to explain why something hurt.,sad,vulnerability,sad_frame_14,SCN0589
+How is it fair that you are expected to tolerate insults?,angry,boundaries,angry_frame_19,SCN0094
+I keep replaying what might happen if you prepare for a change you did not choose.,anxious,uncertainty,anxious_frame_16,SCN0566
+I've felt low since you are tired of pretending everything is fine.,sad,vulnerability,sad_frame_01,SCN0576
+What a lovely surprise that you are offered a chance to try something new.,happy,hope,happy_frame_08,SCN0208
+What a lovely surprise that a small plan works out smoothly.,happy,everyday,happy_frame_08,SCN0158
+I hadn't realised how much I wanted this until everyone laughs at the same silly joke.,happy,relationships,happy_frame_23,SCN0448
+I keep replaying what might happen if you are unsure whether it is safe to be honest.,anxious,social,anxious_frame_16,SCN0541
+I'm getting nowhere because automated support sends you in circles.,frustrated,obstacles,frustrated_frame_01,SCN0376
+"I looked it up, and the document was updated on the second of May.",neutral,information,neutral_frame_17,SCN0242
+I've had enough of this; you are expected to stay silent about unfair treatment.,angry,boundaries,angry_frame_03,SCN0078
+"For today's plan, the window is open by a few centimetres.",neutral,observation,neutral_frame_19,SCN0369
+I'm genuinely glad that someone welcomes you after a long absence.,happy,relationships,happy_frame_09,SCN0434
+I've had enough of this; your refusal becomes an argument.,angry,boundaries,angry_frame_03,SCN0078
+"I had hoped for a different outcome, but you pack away things from an earlier time.",sad,loss,sad_frame_20,SCN0320
+I'm getting nowhere because you postpone something you prepared for.,frustrated,blocked goals,frustrated_frame_01,SCN0051
+How is it fair that rules apply differently to different people?,angry,injustice,angry_frame_19,SCN0269
+I've been imagining all the things that could happen if you hear worrying news about someone close.,anxious,safety,anxious_frame_13,SCN0488
+The usual procedure is that the notice is attached to the main entrance.,neutral,routine,neutral_frame_16,SCN0466
+I've had enough of this; you are blamed for another person's decision.,angry,betrayal,angry_frame_03,SCN0028
+"I looked it up, and the report is due on the last working day of the month.",neutral,schedule,neutral_frame_17,SCN0517
+This is becoming so frustrating: you postpone something you prepared for.,frustrated,blocked goals,frustrated_frame_02,SCN0052
+I'm not willing to tolerate this anymore: a clear request is deliberately ignored.,angry,disrespect,angry_frame_16,SCN0141
+The usual procedure is that the museum is closed every Monday.,neutral,schedule,neutral_frame_16,SCN0516
+How is it fair that you are denied a fair chance to explain?,angry,injustice,angry_frame_19,SCN0269
+I've felt low since you face a difficult week without support.,sad,loneliness,sad_frame_01,SCN0276
+"I just want to finish, but interruptions make it impossible to concentrate.",frustrated,hassles,frustrated_frame_24,SCN0199
+"I looked it up, and the form asks for a contact number and address.",neutral,information,neutral_frame_17,SCN0242
+I felt completely deflated when you are left out of something meaningful.,sad,disappointment,sad_frame_14,SCN0114
+The notice states that the form asks for a contact number and address.,neutral,information,neutral_frame_06,SCN0231
+How is it fair that an agreement is broken behind your back?,angry,betrayal,angry_frame_19,SCN0044
+There's a knot in my stomach when you notice something that could put a person at risk.,anxious,safety,anxious_frame_08,SCN0483
+I can't believe anyone thought it was okay that someone takes credit for your work.,angry,disrespect,angry_frame_09,SCN0134
+That crosses a line: a clear request is deliberately ignored.,angry,disrespect,angry_frame_08,SCN0133
+I keep hitting the same wall: fixing a task takes longer than doing it.,frustrated,hassles,frustrated_frame_21,SCN0196
+I'm finding it hard to switch off because you wait for a result that could change your plans.,anxious,uncertainty,anxious_frame_09,SCN0559
+Something feels missing now that you have to let go of a goal.,sad,disappointment,sad_frame_19,SCN0119
+I keep hitting the same wall: you stand in a queue that barely moves.,frustrated,hassles,frustrated_frame_21,SCN0196
+I've been imagining all the things that could happen if you think about a difficult conversation tomorrow.,anxious,social,anxious_frame_13,SCN0538
+"For today's plan, the class begins after the lunch break.",neutral,schedule,neutral_frame_19,SCN0519
+I felt completely deflated when you pack away things from an earlier time.,sad,loss,sad_frame_14,SCN0314
+I'm finding it hard to switch off because you speak in front of a large audience.,anxious,performance,anxious_frame_09,SCN0409
+The usual procedure is that the road is being repaired near the crossing.,neutral,observation,neutral_frame_16,SCN0366
+This is becoming so frustrating: people you need never respond on time.,frustrated,blocked goals,frustrated_frame_02,SCN0052
+That crosses a line: someone uses your belongings without asking.,angry,boundaries,angry_frame_08,SCN0083
+I feel lucky that you solve a problem that seemed impossible.,happy,achievement,happy_frame_22,SCN0022
+I've been imagining all the things that could happen if you try to remember everything before a presentation.,anxious,performance,anxious_frame_13,SCN0413
+There's a knot in my stomach when you hear worrying news about someone close.,anxious,safety,anxious_frame_08,SCN0483
+"For today's plan, the parcel contains two books and a notebook.",neutral,routine,neutral_frame_19,SCN0469
+What a lovely surprise that you arrive home to a meal someone made.,happy,everyday,happy_frame_08,SCN0158
+How is it fair that a trusted person spreads rumours about you?,angry,betrayal,angry_frame_19,SCN0044
+What if things go wrong because you sit an exam that matters a great deal?,anxious,performance,anxious_frame_05,SCN0405
+I've been imagining all the things that could happen if you wait for an important reply.,anxious,uncertainty,anxious_frame_13,SCN0563
+"I looked it up, and the library has computers on the first floor.",neutral,information,neutral_frame_17,SCN0242
+The notice states that the appointment has moved to next week.,neutral,schedule,neutral_frame_06,SCN0506
+"I had hoped for a different outcome, but you have to let go of a goal.",sad,disappointment,sad_frame_20,SCN0120
+Something feels missing now that something important happens and there is nobody to tell.,sad,loneliness,sad_frame_19,SCN0294
+What a lovely surprise that someone notices your effort.,happy,achievement,happy_frame_08,SCN0008
+I feel lucky that a fresh start feels possible.,happy,hope,happy_frame_22,SCN0222
+I'm finding it hard to switch off because you wait to hear whether everyone arrived safely.,anxious,safety,anxious_frame_09,SCN0484
+This is becoming so frustrating: you are interrupted just as you make progress.,frustrated,blocked goals,frustrated_frame_02,SCN0052
+I'm getting nowhere because you lose progress when an application stops responding.,frustrated,obstacles,frustrated_frame_01,SCN0376
+That crosses a line: you are pressured to accept something unwanted.,angry,boundaries,angry_frame_08,SCN0083
+What a lovely surprise that you get the last seat on a crowded train.,happy,everyday,happy_frame_08,SCN0158
+I feel lucky that you spend an easy afternoon with close friends.,happy,relationships,happy_frame_22,SCN0447
+What if things go wrong because someone who should be home is not answering?,anxious,safety,anxious_frame_05,SCN0480
+What if things go wrong because you replay an awkward conversation?,anxious,social,anxious_frame_05,SCN0530
+I'm going round in circles because a form has to be completed all over again.,frustrated,hassles,frustrated_frame_09,SCN0184
+"For today's plan, the shop has changed its opening hours.",neutral,observation,neutral_frame_19,SCN0369
+The notice states that the garden has a small pond near the gate.,neutral,observation,neutral_frame_06,SCN0356
+That gave me a real sense of joy: everyone laughs at the same silly joke.,happy,relationships,happy_frame_25,SCN0450
+This is becoming so frustrating: you repeat information you already provided.,frustrated,obstacles,frustrated_frame_02,SCN0377
+This is becoming so frustrating: fixing a task takes longer than doing it.,frustrated,hassles,frustrated_frame_02,SCN0177
+How is it fair that your work is dismissed without being heard?,angry,disrespect,angry_frame_19,SCN0144
+I wish things had gone differently when you say goodbye to someone you may not see again.,sad,loss,sad_frame_03,SCN0303
+I'm not willing to tolerate this anymore: you are blamed for another person's decision.,angry,betrayal,angry_frame_16,SCN0041
+The notice states that the road is being repaired near the crossing.,neutral,observation,neutral_frame_06,SCN0356
+Something feels missing now that you want to talk but do not know whom to call.,sad,loneliness,sad_frame_19,SCN0294
+This is becoming so frustrating: you restart work because the system crashes again.,frustrated,obstacles,frustrated_frame_02,SCN0377
+"I looked it up, and the window is open by a few centimetres.",neutral,observation,neutral_frame_17,SCN0367
+The notice states that the report is due on the last working day of the month.,neutral,schedule,neutral_frame_06,SCN0506
+How is it fair that you are pressured to accept something unwanted?,angry,boundaries,angry_frame_19,SCN0094
+There's a knot in my stomach when you try to remember everything before a presentation.,anxious,performance,anxious_frame_08,SCN0408
+I wish things had gone differently when your effort goes unnoticed.,sad,disappointment,sad_frame_03,SCN0103
+I keep replaying what might happen if a person close to you has an unexpected health problem.,anxious,safety,anxious_frame_16,SCN0491
+This is becoming so frustrating: the item you need is out of stock again.,frustrated,hassles,frustrated_frame_02,SCN0177
+That gave me a real sense of joy: you solve a problem that seemed impossible.,happy,achievement,happy_frame_25,SCN0025
+"I just want to finish, but a simple appointment is difficult to arrange.",frustrated,hassles,frustrated_frame_24,SCN0199
+I'm not willing to tolerate this anymore: you are denied a fair chance to explain.,angry,injustice,angry_frame_16,SCN0266
+"I had hoped for a different outcome, but you reach for someone who is no longer there.",sad,vulnerability,sad_frame_20,SCN0595
+I wish things had gone differently when you reach for someone who is no longer there.,sad,vulnerability,sad_frame_03,SCN0578
+"I had hoped for a different outcome, but someone you trusted lets you down.",sad,disappointment,sad_frame_20,SCN0120
+That crosses a line: a person knowingly breaks your trust.,angry,betrayal,angry_frame_08,SCN0033
+That crosses a line: rules apply differently to different people.,angry,injustice,angry_frame_08,SCN0258
+I feel lucky that you get to help someone.,happy,hope,happy_frame_22,SCN0222
+"At the moment, the file contains three separate worksheets.",neutral,information,neutral_frame_15,SCN0240
+I've had enough of this; you are treated unfairly.,angry,disrespect,angry_frame_03,SCN0128
+The usual procedure is that the library has computers on the first floor.,neutral,information,neutral_frame_16,SCN0241
+"I looked it up, and the office opens at nine and closes at five.",neutral,schedule,neutral_frame_17,SCN0517
+I keep hitting the same wall: a deadline approaches while you wait for approval.,frustrated,blocked goals,frustrated_frame_21,SCN0071
+Something feels missing now that everyone around you seems to have found their place.,sad,loneliness,sad_frame_19,SCN0294
+I'm genuinely glad that you find a quiet place after a busy day.,happy,everyday,happy_frame_09,SCN0159
+I feel lucky that someone notices your effort.,happy,achievement,happy_frame_22,SCN0022
+This is becoming so frustrating: a simple task fails for no clear reason.,frustrated,obstacles,frustrated_frame_02,SCN0377
+Something feels missing now that you spend a special day alone.,sad,loneliness,sad_frame_19,SCN0294
+I hadn't realised how much I wanted this until you notice your own progress.,happy,achievement,happy_frame_23,SCN0023
+"I had hoped for a different outcome, but you face a difficult week without support.",sad,loneliness,sad_frame_20,SCN0295
+What if things go wrong because you notice something that could put a person at risk?,anxious,safety,anxious_frame_05,SCN0480
+Something feels missing now that you pack away things from an earlier time.,sad,loss,sad_frame_19,SCN0319
+I've had enough of this; a person mocks a boundary you stated.,angry,disrespect,angry_frame_03,SCN0128
+"I had hoped for a different outcome, but a song brings back memories of someone you lost.",sad,loss,sad_frame_20,SCN0320
+I've been imagining all the things that could happen if several possible outcomes keep running through your mind.,anxious,uncertainty,anxious_frame_13,SCN0563
+I hadn't realised how much I wanted this until you finally understand a difficult idea.,happy,achievement,happy_frame_23,SCN0023
+I hadn't realised how much I wanted this until a fresh start feels possible.,happy,hope,happy_frame_23,SCN0223
+I felt completely deflated when something important happens and there is nobody to tell.,sad,loneliness,sad_frame_14,SCN0289
+I'm not willing to tolerate this anymore: a person keeps pushing after you say no.,angry,boundaries,angry_frame_16,SCN0091
+I wish things had gone differently when an apology you needed never arrives.,sad,vulnerability,sad_frame_03,SCN0578
+I felt completely deflated when you feel unseen in a crowded room.,sad,loneliness,sad_frame_14,SCN0289
+I feel lucky that everyone laughs at the same silly joke.,happy,relationships,happy_frame_22,SCN0447
+That gave me a real sense of joy: the rain stops just as you leave.,happy,everyday,happy_frame_25,SCN0175
+I wish things had gone differently when you work hard but still fall short.,sad,disappointment,sad_frame_03,SCN0103
+I hadn't realised how much I wanted this until you discover a book you love.,happy,everyday,happy_frame_23,SCN0173
+I'm going round in circles because a conversation goes in circles without a resolution.,frustrated,miscommunication,frustrated_frame_09,SCN0334
+I'm going round in circles because different people give conflicting information.,frustrated,miscommunication,frustrated_frame_09,SCN0334
+I've been imagining all the things that could happen if a person close to you has an unexpected health problem.,anxious,safety,anxious_frame_13,SCN0488
+I keep hitting the same wall: people you need never respond on time.,frustrated,blocked goals,frustrated_frame_21,SCN0071
+How is it fair that a person mocks a boundary you stated?,angry,disrespect,angry_frame_19,SCN0144
+I keep hitting the same wall: another requirement appears just as you finish.,frustrated,blocked goals,frustrated_frame_21,SCN0071
+I've been imagining all the things that could happen if you speak in front of a large audience.,anxious,performance,anxious_frame_13,SCN0413
+This is becoming so frustrating: you are put on hold and then disconnected.,frustrated,hassles,frustrated_frame_02,SCN0177
+"I just want to finish, but nobody can explain a process clearly.",frustrated,miscommunication,frustrated_frame_24,SCN0349
+I'm finding it hard to switch off because you need help but fear rejection.,anxious,social,anxious_frame_09,SCN0534
+What a lovely surprise that something you nearly gave up on works out.,happy,hope,happy_frame_08,SCN0208
+I can't believe anyone thought it was okay that someone knowingly crosses a line.,angry,boundaries,angry_frame_09,SCN0084
+I'm finding it hard to switch off because you must decide without enough information.,anxious,uncertainty,anxious_frame_09,SCN0559
+"At the moment, the instructions are printed on the back of the box.",neutral,information,neutral_frame_15,SCN0240
+How is it fair that a person denies something they clearly said?,angry,betrayal,angry_frame_19,SCN0044
+There's a knot in my stomach when you do not know what will happen after a meeting.,anxious,uncertainty,anxious_frame_08,SCN0558
+Something feels missing now that you feel unseen in a crowded room.,sad,loneliness,sad_frame_19,SCN0294
+Something feels missing now that a favourite place no longer feels the same.,sad,loss,sad_frame_19,SCN0319
+I'm going round in circles because you follow every instruction and still get an error.,frustrated,obstacles,frustrated_frame_09,SCN0384
+"For today's plan, the office opens at nine and closes at five.",neutral,schedule,neutral_frame_19,SCN0519
+I felt completely deflated when a familiar part of life comes to an end.,sad,loss,sad_frame_14,SCN0314
+I've had enough of this; you are blamed for another person's choices.,angry,boundaries,angry_frame_03,SCN0078
+I've been imagining all the things that could happen if you perform while everyone is watching.,anxious,performance,anxious_frame_13,SCN0413
+There's a knot in my stomach when you must deal with a problem you do not understand.,anxious,safety,anxious_frame_08,SCN0483
+The usual procedure is that the package weighs just under two kilograms.,neutral,information,neutral_frame_16,SCN0241
+I'm finding it hard to switch off because you wonder whether something you said offended someone.,anxious,social,anxious_frame_09,SCN0534
+"I looked it up, and the notice lists the participants' names.",neutral,observation,neutral_frame_17,SCN0367
+I'm going round in circles because a mistake keeps being misunderstood.,frustrated,miscommunication,frustrated_frame_09,SCN0334
+I've felt low since someone else's loss reminds you of your own.,sad,vulnerability,sad_frame_01,SCN0576
+The usual procedure is that the washing machine finishes its cycle in the morning.,neutral,routine,neutral_frame_16,SCN0466
+The notice states that the shelves are made of pine wood.,neutral,routine,neutral_frame_06,SCN0456
+I'm going round in circles because you are interrupted just as you make progress.,frustrated,blocked goals,frustrated_frame_09,SCN0059
+How is it fair that you are repeatedly interrupted?,angry,disrespect,angry_frame_19,SCN0144
+I'm genuinely glad that everyone laughs at the same silly joke.,happy,relationships,happy_frame_09,SCN0434
+"For today's plan, the building has two entrances.",neutral,information,neutral_frame_19,SCN0244
+I've been imagining all the things that could happen if you notice something that could put a person at risk.,anxious,safety,anxious_frame_13,SCN0488
+This is becoming so frustrating: different people give conflicting information.,frustrated,miscommunication,frustrated_frame_02,SCN0327
+I've been imagining all the things that could happen if you think people might be judging you.,anxious,social,anxious_frame_13,SCN0538
+I'm getting nowhere because you cannot find information needed to continue.,frustrated,blocked goals,frustrated_frame_01,SCN0051
+This is becoming so frustrating: you follow every instruction and still get an error.,frustrated,obstacles,frustrated_frame_02,SCN0377
+This is becoming so frustrating: instructions are vague and you are blamed.,frustrated,miscommunication,frustrated_frame_02,SCN0327
+The usual procedure is that the appointment has moved to next week.,neutral,schedule,neutral_frame_16,SCN0516
+I'm genuinely glad that you are trusted with a new opportunity.,happy,achievement,happy_frame_09,SCN0009
+"For today's plan, the notice lists the participants' names.",neutral,observation,neutral_frame_19,SCN0369
+That gave me a real sense of joy: you notice your own progress.,happy,achievement,happy_frame_25,SCN0025
+I've felt low since a once-close friendship becomes distant.,sad,loneliness,sad_frame_01,SCN0276
+"I had hoped for a different outcome, but you have to ask for help.",sad,vulnerability,sad_frame_20,SCN0595
+What a lovely surprise that you spend an easy afternoon with close friends.,happy,relationships,happy_frame_08,SCN0433
+I keep hitting the same wall: you are put on hold and then disconnected.,frustrated,hassles,frustrated_frame_21,SCN0196
+Something feels missing now that you reach for someone who is no longer there.,sad,vulnerability,sad_frame_19,SCN0594
+I'm genuinely glad that a loved one shares reassuring news.,happy,relationships,happy_frame_09,SCN0434
+I'm not willing to tolerate this anymore: you are expected to tolerate insults.,angry,boundaries,angry_frame_16,SCN0091
+I wish things had gone differently when something important happens and there is nobody to tell.,sad,loneliness,sad_frame_03,SCN0278
+I'm going round in circles because people you need never respond on time.,frustrated,blocked goals,frustrated_frame_09,SCN0059
+I hadn't realised how much I wanted this until an application is accepted.,happy,achievement,happy_frame_23,SCN0023
+The notice states that the instructions are printed on the back of the box.,neutral,information,neutral_frame_06,SCN0231
+"At the moment, the class begins after the lunch break.",neutral,schedule,neutral_frame_15,SCN0515
+I'm getting nowhere because different people give conflicting information.,frustrated,miscommunication,frustrated_frame_01,SCN0326
+I'm genuinely glad that you finish a task you kept postponing.,happy,achievement,happy_frame_09,SCN0009
+I've been imagining all the things that could happen if you are unsure whether a situation is safe.,anxious,safety,anxious_frame_13,SCN0488
+"At the moment, the parcel contains two books and a notebook.",neutral,routine,neutral_frame_15,SCN0465
+"I had hoped for a different outcome, but a familiar part of life comes to an end.",sad,loss,sad_frame_20,SCN0320
+"I just want to finish, but you are put on hold and then disconnected.",frustrated,hassles,frustrated_frame_24,SCN0199
+Something feels missing now that you are tired of pretending everything is fine.,sad,vulnerability,sad_frame_19,SCN0594
+I've been imagining all the things that could happen if you wonder whether you misunderstood something.,anxious,uncertainty,anxious_frame_13,SCN0563
+I felt completely deflated when you spend a special day alone.,sad,loneliness,sad_frame_14,SCN0289
+"I just want to finish, but another requirement appears just as you finish.",frustrated,blocked goals,frustrated_frame_24,SCN0074
+That gave me a real sense of joy: an afternoon unexpectedly becomes free.,happy,everyday,happy_frame_25,SCN0175
+This is becoming so frustrating: a problem returns after you fix it.,frustrated,obstacles,frustrated_frame_02,SCN0377
+What a lovely surprise that everyone laughs at the same silly joke.,happy,relationships,happy_frame_08,SCN0433
+"For today's plan, the file contains three separate worksheets.",neutral,information,neutral_frame_19,SCN0244
+I keep replaying what might happen if you cannot tell how someone will react.,anxious,uncertainty,anxious_frame_16,SCN0566
+There's a knot in my stomach when you wait to learn whether you upset a friend.,anxious,social,anxious_frame_08,SCN0533
+The notice states that the parcel contains two books and a notebook.,neutral,routine,neutral_frame_06,SCN0456
+I'm getting nowhere because you restart work because the system crashes again.,frustrated,obstacles,frustrated_frame_01,SCN0376
+This is becoming so frustrating: a deadline approaches while you wait for approval.,frustrated,blocked goals,frustrated_frame_02,SCN0052
+I feel lucky that you make plans you are excited about.,happy,hope,happy_frame_22,SCN0222
+I'm getting nowhere because a problem returns after you fix it.,frustrated,obstacles,frustrated_frame_01,SCN0376
+I can't believe anyone thought it was okay that you are blamed for another person's choices.,angry,boundaries,angry_frame_09,SCN0084
+The notice states that the shop has changed its opening hours.,neutral,observation,neutral_frame_06,SCN0356
+I wish things had gone differently when you miss someone who was there every day.,sad,loss,sad_frame_03,SCN0303
+How is it fair that someone takes advantage of your willingness to help?,angry,betrayal,angry_frame_19,SCN0044
+I'm not willing to tolerate this anymore: someone knowingly crosses a line.,angry,boundaries,angry_frame_16,SCN0091
+I'm getting nowhere because the item you need is out of stock again.,frustrated,hassles,frustrated_frame_01,SCN0176
+I'm going round in circles because you cannot move forward because someone has not replied.,frustrated,blocked goals,frustrated_frame_09,SCN0059
+The notice states that the window is open by a few centimetres.,neutral,observation,neutral_frame_06,SCN0356
+I'm finding it hard to switch off because your work is about to be evaluated.,anxious,performance,anxious_frame_09,SCN0409
+That gave me a real sense of joy: good news arrives after a long wait.,happy,achievement,happy_frame_25,SCN0025
+"I looked it up, and the parcel was left beside the front door.",neutral,observation,neutral_frame_17,SCN0367
+What if things go wrong because you enter a room where you know nobody?,anxious,social,anxious_frame_05,SCN0530
+"I looked it up, and the printer is connected to the office network.",neutral,observation,neutral_frame_17,SCN0367
+I've felt low since everyone around you seems to have found their place.,sad,loneliness,sad_frame_01,SCN0276
+"I looked it up, and the forecast mentions light rain tomorrow.",neutral,routine,neutral_frame_17,SCN0467
+That gave me a real sense of joy: you reach a goal after setbacks.,happy,achievement,happy_frame_25,SCN0025
+I've had enough of this; you are expected to tolerate insults.,angry,boundaries,angry_frame_03,SCN0078
+I feel lucky that an idea begins to take shape.,happy,hope,happy_frame_22,SCN0222
+Something feels missing now that the outcome differs from what you hoped.,sad,disappointment,sad_frame_19,SCN0119
+"I had hoped for a different outcome, but you cannot share an important occasion.",sad,disappointment,sad_frame_20,SCN0120
+I wish things had gone differently when someone else's loss reminds you of your own.,sad,vulnerability,sad_frame_03,SCN0578
+This is becoming so frustrating: a simple appointment is difficult to arrange.,frustrated,hassles,frustrated_frame_02,SCN0177
+I feel lucky that you are trusted with a new opportunity.,happy,achievement,happy_frame_22,SCN0022
+Something feels missing now that you miss someone who was there every day.,sad,loss,sad_frame_19,SCN0319
+What a lovely surprise that an old friend gets in touch unexpectedly.,happy,relationships,happy_frame_08,SCN0433
+What if things go wrong because you think people might be judging you?,anxious,social,anxious_frame_05,SCN0530
+What if things go wrong because you worry about making a mistake publicly?,anxious,performance,anxious_frame_05,SCN0405
+What if things go wrong because you worry that you forgot something important?,anxious,social,anxious_frame_05,SCN0530
+I'm getting nowhere because you follow every instruction and still get an error.,frustrated,obstacles,frustrated_frame_01,SCN0376
+There's a knot in my stomach when you are unsure whether a situation is safe.,anxious,safety,anxious_frame_08,SCN0483
+I've been imagining all the things that could happen if you are alone somewhere that feels unsafe.,anxious,safety,anxious_frame_13,SCN0488
+I'm genuinely glad that someone notices your effort.,happy,achievement,happy_frame_09,SCN0009
+I've been imagining all the things that could happen if you sit an exam that matters a great deal.,anxious,performance,anxious_frame_13,SCN0413
+I'm finding it hard to switch off because you are unsure whether a situation is safe.,anxious,safety,anxious_frame_09,SCN0484
+I keep hitting the same wall: your plans are delayed by something outside your control.,frustrated,blocked goals,frustrated_frame_21,SCN0071
+Something feels missing now that an opportunity passes you by.,sad,disappointment,sad_frame_19,SCN0119
+I'm genuinely glad that you solve a problem that seemed impossible.,happy,achievement,happy_frame_09,SCN0009
+There's a knot in my stomach when you think about a difficult conversation tomorrow.,anxious,social,anxious_frame_08,SCN0533
+I keep replaying what might happen if you are unsure whether a situation is safe.,anxious,safety,anxious_frame_16,SCN0491
+"I just want to finish, but you redo work because expectations changed.",frustrated,miscommunication,frustrated_frame_24,SCN0349
+Something feels missing now that an important chapter closes.,sad,loss,sad_frame_19,SCN0319
+Something feels missing now that you are left out of something meaningful.,sad,disappointment,sad_frame_19,SCN0119
+I keep replaying what might happen if you perform while everyone is watching.,anxious,performance,anxious_frame_16,SCN0416
+I'm not willing to tolerate this anymore: you are pressured to accept something unwanted.,angry,boundaries,angry_frame_16,SCN0091
+I'm not willing to tolerate this anymore: a decision turns out to be dishonest.,angry,injustice,angry_frame_16,SCN0266
+There's a knot in my stomach when you enter a room where you know nobody.,anxious,social,anxious_frame_08,SCN0533
+I keep hitting the same wall: a device freezes whenever you need it.,frustrated,obstacles,frustrated_frame_21,SCN0396
+I wish things had gone differently when news changes what you thought was possible.,sad,disappointment,sad_frame_03,SCN0103
+I feel lucky that something you nearly gave up on works out.,happy,hope,happy_frame_22,SCN0222
+"I had hoped for a different outcome, but a once-close friendship becomes distant.",sad,loneliness,sad_frame_20,SCN0295
+The usual procedure is that the forecast mentions light rain tomorrow.,neutral,routine,neutral_frame_16,SCN0466
+I've been imagining all the things that could happen if you must deal with a problem you do not understand.,anxious,safety,anxious_frame_13,SCN0488
+I keep hitting the same wall: you follow every instruction and still get an error.,frustrated,obstacles,frustrated_frame_21,SCN0396
+"For today's plan, the kitchen window faces the courtyard.",neutral,routine,neutral_frame_19,SCN0469
+I feel lucky that a friend shows up when you least expect it.,happy,relationships,happy_frame_22,SCN0447
+I'm not willing to tolerate this anymore: you are treated unfairly.,angry,disrespect,angry_frame_16,SCN0141
+I'm getting nowhere because interruptions make it impossible to concentrate.,frustrated,hassles,frustrated_frame_01,SCN0176
+That gave me a real sense of joy: a loved one shares reassuring news.,happy,relationships,happy_frame_25,SCN0450
+How is it fair that you are expected to stay silent about unfair treatment?,angry,boundaries,angry_frame_19,SCN0094
+I'm finding it hard to switch off because a person close to you has an unexpected health problem.,anxious,safety,anxious_frame_09,SCN0484
+The notice states that the presentation contains several diagrams.,neutral,observation,neutral_frame_06,SCN0356
+I'm not willing to tolerate this anymore: you are repeatedly interrupted.,angry,disrespect,angry_frame_16,SCN0141
+I wish things had gone differently when you look at photographs from a time you cannot revisit.,sad,loss,sad_frame_03,SCN0303
+There's a knot in my stomach when you prepare for a difficult conversation.,anxious,performance,anxious_frame_08,SCN0408
+I've had enough of this; someone acts as if your time does not matter.,angry,disrespect,angry_frame_03,SCN0128
+I wish things had gone differently when a familiar part of life comes to an end.,sad,loss,sad_frame_03,SCN0303
+I'm not willing to tolerate this anymore: a promise is broken when others depend on it.,angry,injustice,angry_frame_16,SCN0266
+I can't believe anyone thought it was okay that important information is intentionally hidden.,angry,betrayal,angry_frame_09,SCN0034
+I've had enough of this; a hurtful comment continues after you object.,angry,boundaries,angry_frame_03,SCN0078
+What a lovely surprise that a fresh start feels possible.,happy,hope,happy_frame_08,SCN0208
+I'm finding it hard to switch off because you notice something that could put a person at risk.,anxious,safety,anxious_frame_09,SCN0484
+I feel lucky that the rain stops just as you leave.,happy,everyday,happy_frame_22,SCN0172
+The notice states that the package weighs just under two kilograms.,neutral,information,neutral_frame_06,SCN0231
+I'm not willing to tolerate this anymore: someone deliberately lies to you.,angry,betrayal,angry_frame_16,SCN0041
+"I looked it up, and the restaurant menu is available online.",neutral,observation,neutral_frame_17,SCN0367
+I'm getting nowhere because a form has to be completed all over again.,frustrated,hassles,frustrated_frame_01,SCN0176
+What a lovely surprise that you are trusted with a new opportunity.,happy,achievement,happy_frame_08,SCN0008
+I hadn't realised how much I wanted this until you are trusted with a new opportunity.,happy,achievement,happy_frame_23,SCN0023
+I've felt low since you hold back tears during a conversation.,sad,vulnerability,sad_frame_01,SCN0576
+What a lovely surprise that a friend shows up when you least expect it.,happy,relationships,happy_frame_08,SCN0433
+I can't believe anyone thought it was okay that you are expected to stay silent about unfair treatment.,angry,boundaries,angry_frame_09,SCN0084
+That gave me a real sense of joy: an idea begins to take shape.,happy,hope,happy_frame_25,SCN0225
+This is becoming so frustrating: someone will not listen while you clarify a problem.,frustrated,miscommunication,frustrated_frame_02,SCN0327
+I hadn't realised how much I wanted this until a stranger offers a kind gesture.,happy,everyday,happy_frame_23,SCN0173
+"At the moment, the forecast mentions light rain tomorrow.",neutral,routine,neutral_frame_15,SCN0465
+I've had enough of this; a person in authority abuses their position.,angry,injustice,angry_frame_03,SCN0253
+I keep hitting the same wall: several small problems pile up in one day.,frustrated,hassles,frustrated_frame_21,SCN0196
+I wish things had gone differently when you wish someone would notice you are struggling.,sad,loneliness,sad_frame_03,SCN0278
+I keep replaying what might happen if you are alone somewhere that feels unsafe.,anxious,safety,anxious_frame_16,SCN0491
+I'm not willing to tolerate this anymore: a person knowingly breaks your trust.,angry,betrayal,angry_frame_16,SCN0041
+That gave me a real sense of joy: the evening sky looks beautiful.,happy,everyday,happy_frame_25,SCN0175
+I feel lucky that you feel included in a new group.,happy,hope,happy_frame_22,SCN0222
+What if things go wrong because you wonder whether something you said offended someone?,anxious,social,anxious_frame_05,SCN0530
+Something feels missing now that you try to explain why something hurt.,sad,vulnerability,sad_frame_19,SCN0594
+I've felt low since news changes what you thought was possible.,sad,disappointment,sad_frame_01,SCN0101
+I can't believe anyone thought it was okay that you are treated unfairly.,angry,disrespect,angry_frame_09,SCN0134
+I keep replaying what might happen if the outcome is impossible to predict.,anxious,uncertainty,anxious_frame_16,SCN0566
+I felt completely deflated when a plan you cared about falls apart.,sad,disappointment,sad_frame_14,SCN0114
+The usual procedure is that the shelves are made of pine wood.,neutral,routine,neutral_frame_16,SCN0466
+I'm genuinely glad that the evening sky looks beautiful.,happy,everyday,happy_frame_09,SCN0159
+I felt completely deflated when news changes what you thought was possible.,sad,disappointment,sad_frame_14,SCN0114
+I've been imagining all the things that could happen if you prepare for a change you did not choose.,anxious,uncertainty,anxious_frame_13,SCN0563
+I keep replaying what might happen if you wonder whether you misunderstood something.,anxious,uncertainty,anxious_frame_16,SCN0566
+I've had enough of this; a person denies something they clearly said.,angry,betrayal,angry_frame_03,SCN0028
+I'm going round in circles because a simple appointment is difficult to arrange.,frustrated,hassles,frustrated_frame_09,SCN0184
+I'm getting nowhere because your question receives an unrelated answer.,frustrated,miscommunication,frustrated_frame_01,SCN0326
+How is it fair that a clear request is deliberately ignored?,angry,disrespect,angry_frame_19,SCN0144
+That gave me a real sense of joy: you finish a task you kept postponing.,happy,achievement,happy_frame_25,SCN0025
+I felt completely deflated when someone else's loss reminds you of your own.,sad,vulnerability,sad_frame_14,SCN0589
+"For today's plan, the meeting is scheduled for Thursday afternoon.",neutral,schedule,neutral_frame_19,SCN0519
+"For today's plan, the restaurant menu is available online.",neutral,observation,neutral_frame_19,SCN0369
+How is it fair that a hurtful comment continues after you object?,angry,boundaries,angry_frame_19,SCN0094
+I feel lucky that your favourite song comes on.,happy,everyday,happy_frame_22,SCN0172
+There's a knot in my stomach when you wait to hear whether everyone arrived safely.,anxious,safety,anxious_frame_08,SCN0483
+That gave me a real sense of joy: a friend shows up when you least expect it.,happy,relationships,happy_frame_25,SCN0450
+That gave me a real sense of joy: you find a quiet place after a busy day.,happy,everyday,happy_frame_25,SCN0175
+I'm genuinely glad that you make plans you are excited about.,happy,hope,happy_frame_09,SCN0209
+I'm not willing to tolerate this anymore: discrimination is repeatedly ignored.,angry,injustice,angry_frame_16,SCN0266
+I'm genuinely glad that a family member reaches a long-term goal.,happy,relationships,happy_frame_09,SCN0434
+That gave me a real sense of joy: you get to help someone.,happy,hope,happy_frame_25,SCN0225
+"At the moment, the washing machine finishes its cycle in the morning.",neutral,routine,neutral_frame_15,SCN0465
+"I looked it up, and the shop accepts cash and card payments.",neutral,information,neutral_frame_17,SCN0242
+"At the moment, the document was updated on the second of May.",neutral,information,neutral_frame_15,SCN0240
+I hadn't realised how much I wanted this until you are offered a chance to try something new.,happy,hope,happy_frame_23,SCN0223
+That crosses a line: someone takes credit for your work.,angry,disrespect,angry_frame_08,SCN0133
+That crosses a line: someone acts as if your time does not matter.,angry,disrespect,angry_frame_08,SCN0133
+I hadn't realised how much I wanted this until an afternoon unexpectedly becomes free.,happy,everyday,happy_frame_23,SCN0173
+I can't believe anyone thought it was okay that you are blamed before anyone asks what happened.,angry,disrespect,angry_frame_09,SCN0134
+What if things go wrong because you are unsure whether a situation is safe?,anxious,safety,anxious_frame_05,SCN0480
+The notice states that the notice lists the participants' names.,neutral,observation,neutral_frame_06,SCN0356
+"For today's plan, the next bus arrives in approximately ten minutes.",neutral,schedule,neutral_frame_19,SCN0519
+The notice states that the kitchen window faces the courtyard.,neutral,routine,neutral_frame_06,SCN0456
+I'm going round in circles because a straightforward request becomes a long argument.,frustrated,miscommunication,frustrated_frame_09,SCN0334
+I'm finding it hard to switch off because you wait for an important reply.,anxious,uncertainty,anxious_frame_09,SCN0559
+I'm going round in circles because instructions are vague and you are blamed.,frustrated,miscommunication,frustrated_frame_09,SCN0334
+I wish things had gone differently when someone you trusted lets you down.,sad,disappointment,sad_frame_03,SCN0103
+This is becoming so frustrating: a device freezes whenever you need it.,frustrated,obstacles,frustrated_frame_02,SCN0377
+I hadn't realised how much I wanted this until an idea begins to take shape.,happy,hope,happy_frame_23,SCN0223
+I'm getting nowhere because you are put on hold and then disconnected.,frustrated,hassles,frustrated_frame_01,SCN0176
+"I just want to finish, but a conversation goes in circles without a resolution.",frustrated,miscommunication,frustrated_frame_24,SCN0349
+How is it fair that someone ignores your request for space?,angry,boundaries,angry_frame_19,SCN0094
+The usual procedure is that the survey includes twelve questions.,neutral,information,neutral_frame_16,SCN0241
+"I looked it up, and the notice is attached to the main entrance.",neutral,routine,neutral_frame_17,SCN0467
+That gave me a real sense of joy: a difficult situation starts improving.,happy,hope,happy_frame_25,SCN0225
+I keep replaying what might happen if you worry that you forgot something important.,anxious,social,anxious_frame_16,SCN0541
+I feel lucky that a loved one shares reassuring news.,happy,relationships,happy_frame_22,SCN0447
+I keep hitting the same wall: a simple appointment is difficult to arrange.,frustrated,hassles,frustrated_frame_21,SCN0196
+I keep hitting the same wall: a problem returns after you fix it.,frustrated,obstacles,frustrated_frame_21,SCN0396
+"For today's plan, the delivery is expected between noon and two.",neutral,schedule,neutral_frame_19,SCN0519
+I'm genuinely glad that you feel included in a new group.,happy,hope,happy_frame_09,SCN0209
+What a lovely surprise that good news arrives after a long wait.,happy,achievement,happy_frame_08,SCN0008
+The notice states that the office opens at nine and closes at five.,neutral,schedule,neutral_frame_06,SCN0506
+I felt completely deflated when someone you trusted lets you down.,sad,disappointment,sad_frame_14,SCN0114
+I've had enough of this; someone knowingly crosses a line.,angry,boundaries,angry_frame_03,SCN0078
+I keep replaying what might happen if you try to remember everything before a presentation.,anxious,performance,anxious_frame_16,SCN0416
+"For today's plan, the parcel was left beside the front door.",neutral,observation,neutral_frame_19,SCN0369
+I keep replaying what might happen if several possible outcomes keep running through your mind.,anxious,uncertainty,anxious_frame_16,SCN0566
+"At the moment, the office opens at nine and closes at five.",neutral,schedule,neutral_frame_15,SCN0515
+"I just want to finish, but a deadline approaches while you wait for approval.",frustrated,blocked goals,frustrated_frame_24,SCN0074
+The notice states that there are four chairs around the table.,neutral,observation,neutral_frame_06,SCN0356
+The notice states that the survey includes twelve questions.,neutral,information,neutral_frame_06,SCN0231
+I keep replaying what might happen if you prepare for a difficult conversation.,anxious,performance,anxious_frame_16,SCN0416
+The usual procedure is that the building has two entrances.,neutral,information,neutral_frame_16,SCN0241
+What a lovely surprise that you find a solution after several attempts.,happy,hope,happy_frame_08,SCN0208
+The usual procedure is that the booking is listed under my email address.,neutral,schedule,neutral_frame_16,SCN0516
+"I just want to finish, but a device freezes whenever you need it.",frustrated,obstacles,frustrated_frame_24,SCN0399
+Something feels missing now that someone you trusted lets you down.,sad,disappointment,sad_frame_19,SCN0119
+I've felt low since you remember how hopeful you once felt.,sad,vulnerability,sad_frame_01,SCN0576
+The notice states that the delivery is expected between noon and two.,neutral,schedule,neutral_frame_06,SCN0506
+I've had enough of this; you are pressured to accept something unwanted.,angry,boundaries,angry_frame_03,SCN0078
+I'm getting nowhere because another requirement appears just as you finish.,frustrated,blocked goals,frustrated_frame_01,SCN0051
+What a lovely surprise that you receive a thoughtful note.,happy,relationships,happy_frame_08,SCN0433
+That gave me a real sense of joy: a stranger offers a kind gesture.,happy,everyday,happy_frame_25,SCN0175
+The usual procedure is that the kitchen window faces the courtyard.,neutral,routine,neutral_frame_16,SCN0466
+Something feels missing now that you feel far from people who understand you.,sad,loneliness,sad_frame_19,SCN0294
+I'm getting nowhere because people you need never respond on time.,frustrated,blocked goals,frustrated_frame_01,SCN0051
+"I looked it up, and the road is being repaired near the crossing.",neutral,observation,neutral_frame_17,SCN0367
+"At the moment, the report is due on the last working day of the month.",neutral,schedule,neutral_frame_15,SCN0515
+I keep hitting the same wall: the item you need is out of stock again.,frustrated,hassles,frustrated_frame_21,SCN0196
+I felt completely deflated when a favourite place no longer feels the same.,sad,loss,sad_frame_14,SCN0314
+The usual procedure is that you put the documents in the top drawer.,neutral,routine,neutral_frame_16,SCN0466
+"I had hoped for a different outcome, but a plan you cared about falls apart.",sad,disappointment,sad_frame_20,SCN0120
+"For today's plan, the appointment has moved to next week.",neutral,schedule,neutral_frame_19,SCN0519
+I wish things had gone differently when you want to talk but do not know whom to call.,sad,loneliness,sad_frame_03,SCN0278
+I'm genuinely glad that a project comes together well.,happy,achievement,happy_frame_09,SCN0009
+That crosses a line: you are repeatedly interrupted.,angry,disrespect,angry_frame_08,SCN0133
+I can't believe anyone thought it was okay that someone manipulates a situation.,angry,betrayal,angry_frame_09,SCN0034
+I'm going round in circles because you are put on hold and then disconnected.,frustrated,hassles,frustrated_frame_09,SCN0184
+I've felt low since something important happens and there is nobody to tell.,sad,loneliness,sad_frame_01,SCN0276
+"I had hoped for a different outcome, but a favourite place no longer feels the same.",sad,loss,sad_frame_20,SCN0320
+There's a knot in my stomach when someone who should be home is not answering.,anxious,safety,anxious_frame_08,SCN0483
+I wish things had gone differently when you hold back tears during a conversation.,sad,vulnerability,sad_frame_03,SCN0578
+I wish things had gone differently when you have to ask for help.,sad,vulnerability,sad_frame_03,SCN0578
+"I looked it up, and the washing machine finishes its cycle in the morning.",neutral,routine,neutral_frame_17,SCN0467
+I can't believe anyone thought it was okay that someone uses your belongings without asking.,angry,boundaries,angry_frame_09,SCN0084
+I wish things had gone differently when an opportunity passes you by.,sad,disappointment,sad_frame_03,SCN0103
+There's a knot in my stomach when you wait for a result that could change your plans.,anxious,uncertainty,anxious_frame_08,SCN0558
+I keep hitting the same wall: you are interrupted just as you make progress.,frustrated,blocked goals,frustrated_frame_21,SCN0071
+I've had enough of this; private information is shared without permission.,angry,disrespect,angry_frame_03,SCN0128
+"I just want to finish, but a mistake keeps being misunderstood.",frustrated,miscommunication,frustrated_frame_24,SCN0349
+The usual procedure is that the office opens at nine and closes at five.,neutral,schedule,neutral_frame_16,SCN0516
+How is it fair that someone treats you as disposable after accepting help?,angry,betrayal,angry_frame_19,SCN0044
+"I had hoped for a different outcome, but news changes what you thought was possible.",sad,disappointment,sad_frame_20,SCN0120
+That crosses a line: a hurtful comment continues after you object.,angry,boundaries,angry_frame_08,SCN0083
+This is becoming so frustrating: a straightforward request becomes a long argument.,frustrated,miscommunication,frustrated_frame_02,SCN0327
+I felt completely deflated when your effort goes unnoticed.,sad,disappointment,sad_frame_14,SCN0114
+I feel lucky that you get the last seat on a crowded train.,happy,everyday,happy_frame_22,SCN0172
+What a lovely surprise that you discover a book you love.,happy,everyday,happy_frame_08,SCN0158
+This is becoming so frustrating: your plans are delayed by something outside your control.,frustrated,blocked goals,frustrated_frame_02,SCN0052
+I've felt low since the outcome differs from what you hoped.,sad,disappointment,sad_frame_01,SCN0101
+I felt completely deflated when a relationship ends despite your efforts.,sad,loss,sad_frame_14,SCN0314
+I'm finding it hard to switch off because you perform while everyone is watching.,anxious,performance,anxious_frame_09,SCN0409
+What a lovely surprise that the evening sky looks beautiful.,happy,everyday,happy_frame_08,SCN0158
+I've been imagining all the things that could happen if you cannot tell how someone will react.,anxious,uncertainty,anxious_frame_13,SCN0563
+Something feels missing now that you face a difficult week without support.,sad,loneliness,sad_frame_19,SCN0294
+What a lovely surprise that you find a quiet place after a busy day.,happy,everyday,happy_frame_08,SCN0158
+"I just want to finish, but you repeat information you already provided.",frustrated,obstacles,frustrated_frame_24,SCN0399
+What a lovely surprise that a loved one shares reassuring news.,happy,relationships,happy_frame_08,SCN0433
+I can't believe anyone thought it was okay that your work is dismissed without being heard.,angry,disrespect,angry_frame_09,SCN0134
+The notice states that the library has computers on the first floor.,neutral,information,neutral_frame_06,SCN0231
+There's a knot in my stomach when you must decide without enough information.,anxious,uncertainty,anxious_frame_08,SCN0558
+I'm genuinely glad that an old friend gets in touch unexpectedly.,happy,relationships,happy_frame_09,SCN0434
+I've had enough of this; you are charged for something you never agreed to.,angry,injustice,angry_frame_03,SCN0253
+That crosses a line: an agreement is broken behind your back.,angry,betrayal,angry_frame_08,SCN0033
+What if things go wrong because you hear worrying news about someone close?,anxious,safety,anxious_frame_05,SCN0480
+I can't believe anyone thought it was okay that discrimination is repeatedly ignored.,angry,injustice,angry_frame_09,SCN0259
+"At the moment, the window is open by a few centimetres.",neutral,observation,neutral_frame_15,SCN0365
+I felt completely deflated when you have nobody nearby to share a memory with.,sad,loneliness,sad_frame_14,SCN0289
+I'm finding it hard to switch off because you worry that you forgot something important.,anxious,social,anxious_frame_09,SCN0534
+I keep replaying what might happen if you wait to learn whether you upset a friend.,anxious,social,anxious_frame_16,SCN0541
+That crosses a line: someone deliberately lies to you.,angry,betrayal,angry_frame_08,SCN0033
+"I just want to finish, but a straightforward request becomes a long argument.",frustrated,miscommunication,frustrated_frame_24,SCN0349
+I can't believe anyone thought it was okay that your refusal becomes an argument.,angry,boundaries,angry_frame_09,SCN0084
+This is becoming so frustrating: several small problems pile up in one day.,frustrated,hassles,frustrated_frame_02,SCN0177
+The notice states that you put the documents in the top drawer.,neutral,routine,neutral_frame_06,SCN0456
+The usual procedure is that the notice lists the participants' names.,neutral,observation,neutral_frame_16,SCN0366
+I keep hitting the same wall: a straightforward request becomes a long argument.,frustrated,miscommunication,frustrated_frame_21,SCN0346
+What if things go wrong because you need help but fear rejection?,anxious,social,anxious_frame_05,SCN0530
+I hadn't realised how much I wanted this until you reach a goal after setbacks.,happy,achievement,happy_frame_23,SCN0023
+What if things go wrong because you are unsure whether it is safe to be honest?,anxious,social,anxious_frame_05,SCN0530
+"For today's plan, you take the second road after the bridge.",neutral,routine,neutral_frame_19,SCN0469
+What a lovely surprise that a family member reaches a long-term goal.,happy,relationships,happy_frame_08,SCN0433
+What if things go wrong because a person close to you has an unexpected health problem?,anxious,safety,anxious_frame_05,SCN0480
+How is it fair that someone gets away with deliberately causing harm?,angry,injustice,angry_frame_19,SCN0269
+I feel lucky that a project comes together well.,happy,achievement,happy_frame_22,SCN0022
+"I looked it up, and the survey includes twelve questions.",neutral,information,neutral_frame_17,SCN0242
+I hadn't realised how much I wanted this until your favourite song comes on.,happy,everyday,happy_frame_23,SCN0173
+This is becoming so frustrating: you stand in a queue that barely moves.,frustrated,hassles,frustrated_frame_02,SCN0177
+"I had hoped for a different outcome, but something important happens and there is nobody to tell.",sad,loneliness,sad_frame_20,SCN0295
+This is becoming so frustrating: another requirement appears just as you finish.,frustrated,blocked goals,frustrated_frame_02,SCN0052
+"At the moment, you take the second road after the bridge.",neutral,routine,neutral_frame_15,SCN0465
+I'm not willing to tolerate this anymore: someone treats you as disposable after accepting help.,angry,betrayal,angry_frame_16,SCN0041
+"For today's plan, the notice is attached to the main entrance.",neutral,routine,neutral_frame_19,SCN0469
+There's a knot in my stomach when several possible outcomes keep running through your mind.,anxious,uncertainty,anxious_frame_08,SCN0558
+"For today's plan, the printer is connected to the office network.",neutral,observation,neutral_frame_19,SCN0369
+What a lovely surprise that a difficult situation starts improving.,happy,hope,happy_frame_08,SCN0208
+Something feels missing now that your effort goes unnoticed.,sad,disappointment,sad_frame_19,SCN0119
+"For today's plan, the survey includes twelve questions.",neutral,information,neutral_frame_19,SCN0244
+I hadn't realised how much I wanted this until a loved one shares reassuring news.,happy,relationships,happy_frame_23,SCN0448
+What a lovely surprise that an idea begins to take shape.,happy,hope,happy_frame_08,SCN0208
+The usual procedure is that the window is open by a few centimetres.,neutral,observation,neutral_frame_16,SCN0366
+I feel lucky that a difficult situation starts improving.,happy,hope,happy_frame_22,SCN0222
+I'm getting nowhere because you are ready to act but lack resources.,frustrated,blocked goals,frustrated_frame_01,SCN0051
+I've felt low since a favourite place no longer feels the same.,sad,loss,sad_frame_01,SCN0301
+There's a knot in my stomach when you hear an unusual noise outside late at night.,anxious,safety,anxious_frame_08,SCN0483
+"I just want to finish, but you are interrupted just as you make progress.",frustrated,blocked goals,frustrated_frame_24,SCN0074
+Something feels missing now that you remember how hopeful you once felt.,sad,vulnerability,sad_frame_19,SCN0594
+I've been imagining all the things that could happen if you join a group where everyone knows each other.,anxious,social,anxious_frame_13,SCN0538
+"I had hoped for a different outcome, but you look at photographs from a time you cannot revisit.",sad,loss,sad_frame_20,SCN0320
+What if things go wrong because you travel somewhere unfamiliar after dark?,anxious,safety,anxious_frame_05,SCN0480
+Something feels missing now that you wonder how things could have gone differently.,sad,vulnerability,sad_frame_19,SCN0594
+I keep replaying what might happen if you enter a room where you know nobody.,anxious,social,anxious_frame_16,SCN0541
+I hadn't realised how much I wanted this until good news arrives after a long wait.,happy,achievement,happy_frame_23,SCN0023
+I keep replaying what might happen if you worry about making a mistake publicly.,anxious,performance,anxious_frame_16,SCN0416
+How is it fair that a promise is broken when others depend on it?,angry,injustice,angry_frame_19,SCN0269
+"For today's plan, the package weighs just under two kilograms.",neutral,information,neutral_frame_19,SCN0244
+There's a knot in my stomach when you are unsure whether it is safe to be honest.,anxious,social,anxious_frame_08,SCN0533
+How is it fair that a vulnerable person is taken advantage of?,angry,injustice,angry_frame_19,SCN0269
+I'm genuinely glad that someone remembers a small detail about you.,happy,relationships,happy_frame_09,SCN0434
+I've had enough of this; you are repeatedly interrupted.,angry,disrespect,angry_frame_03,SCN0128
+Something feels missing now that you have nobody nearby to share a memory with.,sad,loneliness,sad_frame_19,SCN0294
+"I just want to finish, but you lose progress when an application stops responding.",frustrated,obstacles,frustrated_frame_24,SCN0399
+I keep hitting the same wall: you redo work because expectations changed.,frustrated,miscommunication,frustrated_frame_21,SCN0346
+I've been imagining all the things that could happen if the outcome is impossible to predict.,anxious,uncertainty,anxious_frame_13,SCN0563
+I'm not willing to tolerate this anymore: someone takes advantage of your willingness to help.,angry,betrayal,angry_frame_16,SCN0041
+The notice states that the document was updated on the second of May.,neutral,information,neutral_frame_06,SCN0231
+"For today's plan, the document was updated on the second of May.",neutral,information,neutral_frame_19,SCN0244
+I keep replaying what might happen if you wait for your turn in an important interview.,anxious,performance,anxious_frame_16,SCN0416
+"At the moment, the presentation contains several diagrams.",neutral,observation,neutral_frame_15,SCN0365
+That crosses a line: someone gets away with deliberately causing harm.,angry,injustice,angry_frame_08,SCN0258
+How is it fair that you are blamed for another person's decision?,angry,betrayal,angry_frame_19,SCN0044
+"I had hoped for a different outcome, but you are left out of something meaningful.",sad,disappointment,sad_frame_20,SCN0120
+I've felt low since a relationship ends despite your efforts.,sad,loss,sad_frame_01,SCN0301
+"At the moment, the printer is connected to the office network.",neutral,observation,neutral_frame_15,SCN0365
+That crosses a line: private information is shared without permission.,angry,disrespect,angry_frame_08,SCN0133
+I'm getting nowhere because a conversation goes in circles without a resolution.,frustrated,miscommunication,frustrated_frame_01,SCN0326
+I keep hitting the same wall: you are ready to act but lack resources.,frustrated,blocked goals,frustrated_frame_21,SCN0071
+I'm not willing to tolerate this anymore: you are charged for something you never agreed to.,angry,injustice,angry_frame_16,SCN0266
+"I just want to finish, but you follow every instruction and still get an error.",frustrated,obstacles,frustrated_frame_24,SCN0399
+What if things go wrong because you wait to hear whether everyone arrived safely?,anxious,safety,anxious_frame_05,SCN0480
+I'm going round in circles because automated support sends you in circles.,frustrated,obstacles,frustrated_frame_09,SCN0384
+The usual procedure is that the parcel contains two books and a notebook.,neutral,routine,neutral_frame_16,SCN0466
+I'm getting nowhere because a straightforward request becomes a long argument.,frustrated,miscommunication,frustrated_frame_01,SCN0326
+I'm not willing to tolerate this anymore: someone acts as if your time does not matter.,angry,disrespect,angry_frame_16,SCN0141
+"I just want to finish, but you cannot find information needed to continue.",frustrated,blocked goals,frustrated_frame_24,SCN0074
+I wish things had gone differently when you spend a special day alone.,sad,loneliness,sad_frame_03,SCN0278
+That crosses a line: someone takes advantage of your willingness to help.,angry,betrayal,angry_frame_08,SCN0033
+"At the moment, the package weighs just under two kilograms.",neutral,information,neutral_frame_15,SCN0240
+I'm genuinely glad that an idea begins to take shape.,happy,hope,happy_frame_09,SCN0209
+I wish things had gone differently when you wonder how things could have gone differently.,sad,vulnerability,sad_frame_03,SCN0578
+Something feels missing now that a plan you cared about falls apart.,sad,disappointment,sad_frame_19,SCN0119
+"At the moment, there are four chairs around the table.",neutral,observation,neutral_frame_15,SCN0365
+I've been imagining all the things that could happen if you need help but fear rejection.,anxious,social,anxious_frame_13,SCN0538
+I'm going round in circles because you restart work because the system crashes again.,frustrated,obstacles,frustrated_frame_09,SCN0384
+I'm getting nowhere because you cannot move forward because someone has not replied.,frustrated,blocked goals,frustrated_frame_01,SCN0051
+I've felt low since a promise you believed in will not be kept.,sad,loss,sad_frame_01,SCN0301
+How is it fair that important information is intentionally hidden?,angry,betrayal,angry_frame_19,SCN0044
+I'm genuinely glad that good news arrives after a long wait.,happy,achievement,happy_frame_09,SCN0009
+I keep replaying what might happen if you travel somewhere unfamiliar after dark.,anxious,safety,anxious_frame_16,SCN0491
+The usual procedure is that the delivery is expected between noon and two.,neutral,schedule,neutral_frame_16,SCN0516
+I'm finding it hard to switch off because you wait to learn whether you upset a friend.,anxious,social,anxious_frame_09,SCN0534
+The usual procedure is that the garden has a small pond near the gate.,neutral,observation,neutral_frame_16,SCN0366
+"I looked it up, and the building has two entrances.",neutral,information,neutral_frame_17,SCN0242
+The notice states that the booking is listed under my email address.,neutral,schedule,neutral_frame_06,SCN0506
+I'm getting nowhere because a device freezes whenever you need it.,frustrated,obstacles,frustrated_frame_01,SCN0376
+"For today's plan, the train leaves from platform four at 8:15.",neutral,schedule,neutral_frame_19,SCN0519
+I can't believe anyone thought it was okay that you are repeatedly interrupted.,angry,disrespect,angry_frame_09,SCN0134
+I hadn't realised how much I wanted this until two people you care about make peace.,happy,relationships,happy_frame_23,SCN0448
+What if things go wrong because someone asks a question when you are unprepared?,anxious,performance,anxious_frame_05,SCN0405
+Something feels missing now that you cannot share an important occasion.,sad,disappointment,sad_frame_19,SCN0119
+What if things go wrong because you wait for a result that could change your plans?,anxious,uncertainty,anxious_frame_05,SCN0555
+That gave me a real sense of joy: a fresh start feels possible.,happy,hope,happy_frame_25,SCN0225
+"I just want to finish, but a problem returns after you fix it.",frustrated,obstacles,frustrated_frame_24,SCN0399
+"At the moment, the next bus arrives in approximately ten minutes.",neutral,schedule,neutral_frame_15,SCN0515
+I've felt low since an apology you needed never arrives.,sad,vulnerability,sad_frame_01,SCN0576
+"For today's plan, the presentation contains several diagrams.",neutral,observation,neutral_frame_19,SCN0369
+I've been imagining all the things that could happen if you worry about making a mistake publicly.,anxious,performance,anxious_frame_13,SCN0413
+I'm genuinely glad that you reach a goal after setbacks.,happy,achievement,happy_frame_09,SCN0009
+I hadn't realised how much I wanted this until a family member reaches a long-term goal.,happy,relationships,happy_frame_23,SCN0448
+The notice states that you take the second road after the bridge.,neutral,routine,neutral_frame_06,SCN0456
+I keep hitting the same wall: a mistake keeps being misunderstood.,frustrated,miscommunication,frustrated_frame_21,SCN0346
+I'm not willing to tolerate this anymore: an agreement is broken behind your back.,angry,betrayal,angry_frame_16,SCN0041
+I'm genuinely glad that the rain stops just as you leave.,happy,everyday,happy_frame_09,SCN0159
+I'm going round in circles because a process gets stuck at the final step.,frustrated,obstacles,frustrated_frame_09,SCN0384
+I've felt low since you want to talk but do not know whom to call.,sad,loneliness,sad_frame_01,SCN0276
+I can't believe anyone thought it was okay that a person in authority abuses their position.,angry,injustice,angry_frame_09,SCN0259
+I wish things had gone differently when you are left out of something meaningful.,sad,disappointment,sad_frame_03,SCN0103
+What if things go wrong because you think about a difficult conversation tomorrow?,anxious,social,anxious_frame_05,SCN0530
+I'm finding it hard to switch off because several possible outcomes keep running through your mind.,anxious,uncertainty,anxious_frame_09,SCN0559
+That crosses a line: important information is intentionally hidden.,angry,betrayal,angry_frame_08,SCN0033
+I've been imagining all the things that could happen if you wait for a result that could change your plans.,anxious,uncertainty,anxious_frame_13,SCN0563
+There's a knot in my stomach when you speak in front of a large audience.,anxious,performance,anxious_frame_08,SCN0408
+"At the moment, the shop has changed its opening hours.",neutral,observation,neutral_frame_15,SCN0365
+This is becoming so frustrating: you clean up a mess someone repeatedly leaves.,frustrated,hassles,frustrated_frame_02,SCN0177
+I'm finding it hard to switch off because you do not know what will happen after a meeting.,anxious,uncertainty,anxious_frame_09,SCN0559
+I'm going round in circles because your plans are delayed by something outside your control.,frustrated,blocked goals,frustrated_frame_09,SCN0059
+What if things go wrong because you wait for your turn in an important interview?,anxious,performance,anxious_frame_05,SCN0405
+"I just want to finish, but you stand in a queue that barely moves.",frustrated,hassles,frustrated_frame_24,SCN0199
+I felt completely deflated when you hold back tears during a conversation.,sad,vulnerability,sad_frame_14,SCN0589
+That crosses a line: a trusted person spreads rumours about you.,angry,betrayal,angry_frame_08,SCN0033
+What a lovely surprise that the rain stops just as you leave.,happy,everyday,happy_frame_08,SCN0158
+I keep replaying what might happen if you start something without knowing what to expect.,anxious,uncertainty,anxious_frame_16,SCN0566
+What if things go wrong because you start something without knowing what to expect?,anxious,uncertainty,anxious_frame_05,SCN0555
+I'm getting nowhere because several small problems pile up in one day.,frustrated,hassles,frustrated_frame_01,SCN0176
+That crosses a line: you are charged for something you never agreed to.,angry,injustice,angry_frame_08,SCN0258
+I'm not willing to tolerate this anymore: someone ignores your request for space.,angry,boundaries,angry_frame_16,SCN0091
+There's a knot in my stomach when you think people might be judging you.,anxious,social,anxious_frame_08,SCN0533
+Something feels missing now that a once-close friendship becomes distant.,sad,loneliness,sad_frame_19,SCN0294
+I've felt low since a plan you cared about falls apart.,sad,disappointment,sad_frame_01,SCN0101
+I'm getting nowhere because your plans are delayed by something outside your control.,frustrated,blocked goals,frustrated_frame_01,SCN0051
+"I looked it up, and the train leaves from platform four at 8:15.",neutral,schedule,neutral_frame_17,SCN0517
+I wish things had gone differently when a favourite place no longer feels the same.,sad,loss,sad_frame_03,SCN0303
+That gave me a real sense of joy: you are trusted with a new opportunity.,happy,achievement,happy_frame_25,SCN0025
+What if things go wrong because you cannot tell how someone will react?,anxious,uncertainty,anxious_frame_05,SCN0555
+I can't believe anyone thought it was okay that someone is punished for a mistake they did not make.,angry,injustice,angry_frame_09,SCN0259
+The usual procedure is that there are four chairs around the table.,neutral,observation,neutral_frame_16,SCN0366
+I can't believe anyone thought it was okay that a trusted person spreads rumours about you.,angry,betrayal,angry_frame_09,SCN0034
+I wish things had gone differently when a promise you believed in will not be kept.,sad,loss,sad_frame_03,SCN0303
+I'm getting nowhere because you redo work because expectations changed.,frustrated,miscommunication,frustrated_frame_01,SCN0326
+I hadn't realised how much I wanted this until a small plan works out smoothly.,happy,everyday,happy_frame_23,SCN0173
+I felt completely deflated when you miss someone who was there every day.,sad,loss,sad_frame_14,SCN0314
+I'm going round in circles because another requirement appears just as you finish.,frustrated,blocked goals,frustrated_frame_09,SCN0059
+There's a knot in my stomach when you start something without knowing what to expect.,anxious,uncertainty,anxious_frame_08,SCN0558
+This is becoming so frustrating: you lose progress when an application stops responding.,frustrated,obstacles,frustrated_frame_02,SCN0377
+I hadn't realised how much I wanted this until someone gives you reassuring news.,happy,hope,happy_frame_23,SCN0223
+This is becoming so frustrating: you miss a connection because a service was late.,frustrated,hassles,frustrated_frame_02,SCN0177
+I've had enough of this; someone treats you as disposable after accepting help.,angry,betrayal,angry_frame_03,SCN0028
+I keep hitting the same wall: you lose progress when an application stops responding.,frustrated,obstacles,frustrated_frame_21,SCN0396
+I've felt low since you try to explain why something hurt.,sad,vulnerability,sad_frame_01,SCN0576
+The usual procedure is that the meeting is scheduled for Thursday afternoon.,neutral,schedule,neutral_frame_16,SCN0516
+There's a knot in my stomach when you sit an exam that matters a great deal.,anxious,performance,anxious_frame_08,SCN0408
+How is it fair that a person knowingly breaks your trust?,angry,betrayal,angry_frame_19,SCN0044
+I'm genuinely glad that you notice your own progress.,happy,achievement,happy_frame_09,SCN0009
+I've felt low since you say goodbye to someone you may not see again.,sad,loss,sad_frame_01,SCN0301
+The notice states that the washing machine finishes its cycle in the morning.,neutral,routine,neutral_frame_06,SCN0456
+The usual procedure is that the document was updated on the second of May.,neutral,information,neutral_frame_16,SCN0241
+I feel lucky that someone gives you reassuring news.,happy,hope,happy_frame_22,SCN0222
+I'm getting nowhere because a mistake keeps being misunderstood.,frustrated,miscommunication,frustrated_frame_01,SCN0326
+Something feels missing now that you look at photographs from a time you cannot revisit.,sad,loss,sad_frame_19,SCN0319
+What a lovely surprise that a project comes together well.,happy,achievement,happy_frame_08,SCN0008
+I feel lucky that the evening sky looks beautiful.,happy,everyday,happy_frame_22,SCN0172
+There's a knot in my stomach when you perform while everyone is watching.,anxious,performance,anxious_frame_08,SCN0408
+I've had enough of this; you are blamed before anyone asks what happened.,angry,disrespect,angry_frame_03,SCN0128
+How is it fair that someone acts as if your time does not matter?,angry,disrespect,angry_frame_19,SCN0144
+I'm genuinely glad that two people you care about make peace.,happy,relationships,happy_frame_09,SCN0434
+I hadn't realised how much I wanted this until you get the last seat on a crowded train.,happy,everyday,happy_frame_23,SCN0173
+I've felt low since you pack away things from an earlier time.,sad,loss,sad_frame_01,SCN0301
+That crosses a line: a person mocks a boundary you stated.,angry,disrespect,angry_frame_08,SCN0133
+I wish things had gone differently when a relationship ends despite your efforts.,sad,loss,sad_frame_03,SCN0303
+That gave me a real sense of joy: two people you care about make peace.,happy,relationships,happy_frame_25,SCN0450
+That gave me a real sense of joy: your favourite song comes on.,happy,everyday,happy_frame_25,SCN0175
+"At the moment, the road is being repaired near the crossing.",neutral,observation,neutral_frame_15,SCN0365
+I'm not willing to tolerate this anymore: someone gets away with deliberately causing harm.,angry,injustice,angry_frame_16,SCN0266
+I hadn't realised how much I wanted this until you find a quiet place after a busy day.,happy,everyday,happy_frame_23,SCN0173
+I'm finding it hard to switch off because you prepare for a change you did not choose.,anxious,uncertainty,anxious_frame_09,SCN0559
+"I had hoped for a different outcome, but you remember how hopeful you once felt.",sad,vulnerability,sad_frame_20,SCN0595
+That gave me a real sense of joy: you feel included in a new group.,happy,hope,happy_frame_25,SCN0225
+"I had hoped for a different outcome, but an important chapter closes.",sad,loss,sad_frame_20,SCN0320
+I'm getting nowhere because you clean up a mess someone repeatedly leaves.,frustrated,hassles,frustrated_frame_01,SCN0176
+That crosses a line: you are denied a fair chance to explain.,angry,injustice,angry_frame_08,SCN0258
+I feel lucky that you arrive home to a meal someone made.,happy,everyday,happy_frame_22,SCN0172
+"At the moment, the building has two entrances.",neutral,information,neutral_frame_15,SCN0240
+"I looked it up, and the presentation contains several diagrams.",neutral,observation,neutral_frame_17,SCN0367
+"For today's plan, the garden has a small pond near the gate.",neutral,observation,neutral_frame_19,SCN0369
+I feel lucky that two people you care about make peace.,happy,relationships,happy_frame_22,SCN0447
+I'm finding it hard to switch off because you try to remember everything before a presentation.,anxious,performance,anxious_frame_09,SCN0409
+"I looked it up, and you prepare rice and lentils for lunch.",neutral,routine,neutral_frame_17,SCN0467
+The usual procedure is that the restaurant menu is available online.,neutral,observation,neutral_frame_16,SCN0366
+"I looked it up, and the garden has a small pond near the gate.",neutral,observation,neutral_frame_17,SCN0367
+"I had hoped for a different outcome, but you wonder how things could have gone differently.",sad,vulnerability,sad_frame_20,SCN0595
+I've felt low since someone you trusted lets you down.,sad,disappointment,sad_frame_01,SCN0101
+That gave me a real sense of joy: an old friend gets in touch unexpectedly.,happy,relationships,happy_frame_25,SCN0450
+The usual procedure is that you prepare rice and lentils for lunch.,neutral,routine,neutral_frame_16,SCN0466
+I've been imagining all the things that could happen if you enter a room where you know nobody.,anxious,social,anxious_frame_13,SCN0538
+"At the moment, the shop accepts cash and card payments.",neutral,information,neutral_frame_15,SCN0240
+I wish things had gone differently when you cannot share an important occasion.,sad,disappointment,sad_frame_03,SCN0103
+I've had enough of this; someone is punished for a mistake they did not make.,angry,injustice,angry_frame_03,SCN0253
+What a lovely surprise that you finally understand a difficult idea.,happy,achievement,happy_frame_08,SCN0008
+"I had hoped for a different outcome, but an apology you needed never arrives.",sad,vulnerability,sad_frame_20,SCN0595
+I've had enough of this; your work is dismissed without being heard.,angry,disrespect,angry_frame_03,SCN0128
+There's a knot in my stomach when you wonder whether you misunderstood something.,anxious,uncertainty,anxious_frame_08,SCN0558
+I keep replaying what might happen if you think people might be judging you.,anxious,social,anxious_frame_16,SCN0541
+I've been imagining all the things that could happen if you do not know what will happen after a meeting.,anxious,uncertainty,anxious_frame_13,SCN0563
+I'm going round in circles because a device freezes whenever you need it.,frustrated,obstacles,frustrated_frame_09,SCN0384
+"I had hoped for a different outcome, but you work hard but still fall short.",sad,disappointment,sad_frame_20,SCN0120
+That gave me a real sense of joy: someone notices your effort.,happy,achievement,happy_frame_25,SCN0025
+"I looked it up, and the file contains three separate worksheets.",neutral,information,neutral_frame_17,SCN0242
+I keep replaying what might happen if you think about a difficult conversation tomorrow.,anxious,social,anxious_frame_16,SCN0541
+How is it fair that someone takes credit for your work?,angry,disrespect,angry_frame_19,SCN0144
+I hadn't realised how much I wanted this until you get to help someone.,happy,hope,happy_frame_23,SCN0223
+I keep replaying what might happen if you wonder whether something you said offended someone.,anxious,social,anxious_frame_16,SCN0541
+That crosses a line: someone knowingly crosses a line.,angry,boundaries,angry_frame_08,SCN0083
+I hadn't realised how much I wanted this until the evening sky looks beautiful.,happy,everyday,happy_frame_23,SCN0173
+What if things go wrong because you hear an unusual noise outside late at night?,anxious,safety,anxious_frame_05,SCN0480
+That gave me a real sense of joy: someone remembers a small detail about you.,happy,relationships,happy_frame_25,SCN0450
+"I had hoped for a different outcome, but you try to explain why something hurt.",sad,vulnerability,sad_frame_20,SCN0595
+The notice states that the forecast mentions light rain tomorrow.,neutral,routine,neutral_frame_06,SCN0456
+That gave me a real sense of joy: an application is accepted.,happy,achievement,happy_frame_25,SCN0025
+I've had enough of this; rules apply differently to different people.,angry,injustice,angry_frame_03,SCN0253
+I keep hitting the same wall: you postpone something you prepared for.,frustrated,blocked goals,frustrated_frame_21,SCN0071
+I'm going round in circles because you clean up a mess someone repeatedly leaves.,frustrated,hassles,frustrated_frame_09,SCN0184
+I feel lucky that you reach a goal after setbacks.,happy,achievement,happy_frame_22,SCN0022
+I've been imagining all the things that could happen if you prepare for a difficult conversation.,anxious,performance,anxious_frame_13,SCN0413
+I'm finding it hard to switch off because you hear worrying news about someone close.,anxious,safety,anxious_frame_09,SCN0484
+"At the moment, the shelves are made of pine wood.",neutral,routine,neutral_frame_15,SCN0465
+I'm not willing to tolerate this anymore: you are blamed for another person's choices.,angry,boundaries,angry_frame_16,SCN0091
+I can't believe anyone thought it was okay that rules apply differently to different people.,angry,injustice,angry_frame_09,SCN0259
+That crosses a line: you are blamed for another person's decision.,angry,betrayal,angry_frame_08,SCN0033
+What if things go wrong because you perform while everyone is watching?,anxious,performance,anxious_frame_05,SCN0405
+"I just want to finish, but fixing a task takes longer than doing it.",frustrated,hassles,frustrated_frame_24,SCN0199
+That crosses a line: someone is punished for a mistake they did not make.,angry,injustice,angry_frame_08,SCN0258
+"At the moment, the notice is attached to the main entrance.",neutral,routine,neutral_frame_15,SCN0465
+I'm getting nowhere because avoidable delays hold up your progress.,frustrated,blocked goals,frustrated_frame_01,SCN0051
+"For today's plan, you buy vegetables and bread from the local shop.",neutral,routine,neutral_frame_19,SCN0469
+"I looked it up, and the parcel contains two books and a notebook.",neutral,routine,neutral_frame_17,SCN0467
+"I had hoped for a different outcome, but an opportunity passes you by.",sad,disappointment,sad_frame_20,SCN0120
+I'm getting nowhere because instructions are vague and you are blamed.,frustrated,miscommunication,frustrated_frame_01,SCN0326
+I've been imagining all the things that could happen if you wait to learn whether you upset a friend.,anxious,social,anxious_frame_13,SCN0538
+"I just want to finish, but you restart work because the system crashes again.",frustrated,obstacles,frustrated_frame_24,SCN0399
+The notice states that the file contains three separate worksheets.,neutral,information,neutral_frame_06,SCN0231
+I wish things had gone differently when you feel unseen in a crowded room.,sad,loneliness,sad_frame_03,SCN0278
+I'm going round in circles because a simple task fails for no clear reason.,frustrated,obstacles,frustrated_frame_09,SCN0384
+"At the moment, the library has computers on the first floor.",neutral,information,neutral_frame_15,SCN0240
+I'm finding it hard to switch off because you replay an awkward conversation.,anxious,social,anxious_frame_09,SCN0534
+I feel lucky that you finally understand a difficult idea.,happy,achievement,happy_frame_22,SCN0022
+The usual procedure is that the next bus arrives in approximately ten minutes.,neutral,schedule,neutral_frame_16,SCN0516
+I'm finding it hard to switch off because you hear an unusual noise outside late at night.,anxious,safety,anxious_frame_09,SCN0484
+I hadn't realised how much I wanted this until someone notices your effort.,happy,achievement,happy_frame_23,SCN0023
+I keep hitting the same wall: you miss a connection because a service was late.,frustrated,hassles,frustrated_frame_21,SCN0196
+"For today's plan, the shop accepts cash and card payments.",neutral,information,neutral_frame_19,SCN0244
+I feel lucky that you find a solution after several attempts.,happy,hope,happy_frame_22,SCN0222
+I'm getting nowhere because someone will not listen while you clarify a problem.,frustrated,miscommunication,frustrated_frame_01,SCN0326
+I keep hitting the same wall: you cannot move forward because someone has not replied.,frustrated,blocked goals,frustrated_frame_21,SCN0071
+"For today's plan, the museum is closed every Monday.",neutral,schedule,neutral_frame_19,SCN0519
+What if things go wrong because you speak in front of a large audience?,anxious,performance,anxious_frame_05,SCN0405
+I've felt low since you spend a special day alone.,sad,loneliness,sad_frame_01,SCN0276
+I keep replaying what might happen if someone who should be home is not answering.,anxious,safety,anxious_frame_16,SCN0491
+I've had enough of this; an agreement is broken behind your back.,angry,betrayal,angry_frame_03,SCN0028
+The usual procedure is that the form asks for a contact number and address.,neutral,information,neutral_frame_16,SCN0241
+I'm going round in circles because you repeat information you already provided.,frustrated,obstacles,frustrated_frame_09,SCN0384
+What a lovely surprise that someone gives you reassuring news.,happy,hope,happy_frame_08,SCN0208
+"At the moment, the meeting notes are saved in the shared folder.",neutral,information,neutral_frame_15,SCN0240
+That crosses a line: you are expected to tolerate insults.,angry,boundaries,angry_frame_08,SCN0083
+I felt completely deflated when an important chapter closes.,sad,loss,sad_frame_14,SCN0314
+I keep hitting the same wall: nobody can explain a process clearly.,frustrated,miscommunication,frustrated_frame_21,SCN0346
+What a lovely surprise that two people you care about make peace.,happy,relationships,happy_frame_08,SCN0433
+I hadn't realised how much I wanted this until something you nearly gave up on works out.,happy,hope,happy_frame_23,SCN0223
+I hadn't realised how much I wanted this until you feel included in a new group.,happy,hope,happy_frame_23,SCN0223
+This is becoming so frustrating: a conversation goes in circles without a resolution.,frustrated,miscommunication,frustrated_frame_02,SCN0327
+That gave me a real sense of joy: a project comes together well.,happy,achievement,happy_frame_25,SCN0025
+I feel lucky that an afternoon unexpectedly becomes free.,happy,everyday,happy_frame_22,SCN0172
+What if things go wrong because you must decide without enough information?,anxious,uncertainty,anxious_frame_05,SCN0555
+The notice states that the meeting is scheduled for Thursday afternoon.,neutral,schedule,neutral_frame_06,SCN0506
+That crosses a line: you are blamed for another person's choices.,angry,boundaries,angry_frame_08,SCN0083
+I'm genuinely glad that you find a solution after several attempts.,happy,hope,happy_frame_09,SCN0209
+I've felt low since you cannot share an important occasion.,sad,disappointment,sad_frame_01,SCN0101
+I wish things had gone differently when you are tired of pretending everything is fine.,sad,vulnerability,sad_frame_03,SCN0578
+"I looked it up, and the class begins after the lunch break.",neutral,schedule,neutral_frame_17,SCN0517
+The usual procedure is that you buy vegetables and bread from the local shop.,neutral,routine,neutral_frame_16,SCN0466
+I felt completely deflated when a song brings back memories of someone you lost.,sad,loss,sad_frame_14,SCN0314
+I hadn't realised how much I wanted this until you spend an easy afternoon with close friends.,happy,relationships,happy_frame_23,SCN0448
+How is it fair that you are treated unfairly?,angry,disrespect,angry_frame_19,SCN0144
+I can't believe anyone thought it was okay that someone makes a cruel joke at another person's expense.,angry,disrespect,angry_frame_09,SCN0134
+That crosses a line: a person in authority abuses their position.,angry,injustice,angry_frame_08,SCN0258
+"I had hoped for a different outcome, but you have nobody nearby to share a memory with.",sad,loneliness,sad_frame_20,SCN0295
+The notice states that the restaurant menu is available online.,neutral,observation,neutral_frame_06,SCN0356
+I keep replaying what might happen if you sit an exam that matters a great deal.,anxious,performance,anxious_frame_16,SCN0416
+That crosses a line: your refusal becomes an argument.,angry,boundaries,angry_frame_08,SCN0083
+I'm going round in circles because a deadline approaches while you wait for approval.,frustrated,blocked goals,frustrated_frame_09,SCN0059
+That gave me a real sense of joy: you finally understand a difficult idea.,happy,achievement,happy_frame_25,SCN0025
+"I had hoped for a different outcome, but you hold back tears during a conversation.",sad,vulnerability,sad_frame_20,SCN0595
+"I had hoped for a different outcome, but you want to talk but do not know whom to call.",sad,loneliness,sad_frame_20,SCN0295
+There's a knot in my stomach when you replay an awkward conversation.,anxious,social,anxious_frame_08,SCN0533
+I'm going round in circles because you cannot find information needed to continue.,frustrated,blocked goals,frustrated_frame_09,SCN0059
+The usual procedure is that the instructions are printed on the back of the box.,neutral,information,neutral_frame_16,SCN0241
+How is it fair that someone manipulates a situation?,angry,betrayal,angry_frame_19,SCN0044
+I'm getting nowhere because you repeat information you already provided.,frustrated,obstacles,frustrated_frame_01,SCN0376
+I'm genuinely glad that a difficult situation starts improving.,happy,hope,happy_frame_09,SCN0209
+I keep hitting the same wall: you restart work because the system crashes again.,frustrated,obstacles,frustrated_frame_21,SCN0396
+"For today's plan, the report is due on the last working day of the month.",neutral,schedule,neutral_frame_19,SCN0519
+"I had hoped for a different outcome, but your effort goes unnoticed.",sad,disappointment,sad_frame_20,SCN0120
+I keep hitting the same wall: a simple task fails for no clear reason.,frustrated,obstacles,frustrated_frame_21,SCN0396
+"At the moment, the museum is closed every Monday.",neutral,schedule,neutral_frame_15,SCN0515
+I felt completely deflated when an apology you needed never arrives.,sad,vulnerability,sad_frame_14,SCN0589
+There's a knot in my stomach when you wait for your turn in an important interview.,anxious,performance,anxious_frame_08,SCN0408
+The usual procedure is that the train leaves from platform four at 8:15.,neutral,schedule,neutral_frame_16,SCN0516
+I hadn't realised how much I wanted this until you arrive home to a meal someone made.,happy,everyday,happy_frame_23,SCN0173
+I've been imagining all the things that could happen if your work is about to be evaluated.,anxious,performance,anxious_frame_13,SCN0413
+"I just want to finish, but you miss a connection because a service was late.",frustrated,hassles,frustrated_frame_24,SCN0199
+I've had enough of this; someone ignores your request for space.,angry,boundaries,angry_frame_03,SCN0078
+Something feels missing now that you say goodbye to someone you may not see again.,sad,loss,sad_frame_19,SCN0319
+"At the moment, you buy vegetables and bread from the local shop.",neutral,routine,neutral_frame_15,SCN0465
+The usual procedure is that the shop has changed its opening hours.,neutral,observation,neutral_frame_16,SCN0366
+I can't believe anyone thought it was okay that a person denies something they clearly said.,angry,betrayal,angry_frame_09,SCN0034
+I've had enough of this; someone gets away with deliberately causing harm.,angry,injustice,angry_frame_03,SCN0253
+"I looked it up, and the shelves are made of pine wood.",neutral,routine,neutral_frame_17,SCN0467
+I've had enough of this; discrimination is repeatedly ignored.,angry,injustice,angry_frame_03,SCN0253
+I'm getting nowhere because you are interrupted just as you make progress.,frustrated,blocked goals,frustrated_frame_01,SCN0051
+I'm genuinely glad that your favourite song comes on.,happy,everyday,happy_frame_09,SCN0159
+I hadn't realised how much I wanted this until someone remembers a small detail about you.,happy,relationships,happy_frame_23,SCN0448
+That crosses a line: someone treats you as disposable after accepting help.,angry,betrayal,angry_frame_08,SCN0033
+I'm genuinely glad that you spend an easy afternoon with close friends.,happy,relationships,happy_frame_09,SCN0434
+I hadn't realised how much I wanted this until an old friend gets in touch unexpectedly.,happy,relationships,happy_frame_23,SCN0448
+"I looked it up, and there are four chairs around the table.",neutral,observation,neutral_frame_17,SCN0367
+I'm getting nowhere because a simple appointment is difficult to arrange.,frustrated,hassles,frustrated_frame_01,SCN0176
+I've felt low since you have to ask for help.,sad,vulnerability,sad_frame_01,SCN0576
+"For today's plan, the form asks for a contact number and address.",neutral,information,neutral_frame_19,SCN0244
+Something feels missing now that a familiar part of life comes to an end.,sad,loss,sad_frame_19,SCN0319
+I hadn't realised how much I wanted this until you receive a thoughtful note.,happy,relationships,happy_frame_23,SCN0448
+"I had hoped for a different outcome, but everyone around you seems to have found their place.",sad,loneliness,sad_frame_20,SCN0295
+I hadn't realised how much I wanted this until you find a solution after several attempts.,happy,hope,happy_frame_23,SCN0223
+I'm not willing to tolerate this anymore: you are blamed before anyone asks what happened.,angry,disrespect,angry_frame_16,SCN0141
+I can't believe anyone thought it was okay that you are blamed for another person's decision.,angry,betrayal,angry_frame_09,SCN0034
+What if things go wrong because you wonder whether you misunderstood something?,anxious,uncertainty,anxious_frame_05,SCN0555
+I wish things had gone differently when a plan you cared about falls apart.,sad,disappointment,sad_frame_03,SCN0103
+How is it fair that someone is punished for a mistake they did not make?,angry,injustice,angry_frame_19,SCN0269
+How is it fair that a person in authority abuses their position?,angry,injustice,angry_frame_19,SCN0269
+What if things go wrong because you are alone somewhere that feels unsafe?,anxious,safety,anxious_frame_05,SCN0480
+"I just want to finish, but you try the same solution repeatedly and get nowhere.",frustrated,obstacles,frustrated_frame_24,SCN0399
+I'm not willing to tolerate this anymore: a trusted person spreads rumours about you.,angry,betrayal,angry_frame_16,SCN0041
+I'm getting nowhere because fixing a task takes longer than doing it.,frustrated,hassles,frustrated_frame_01,SCN0176
+"I had hoped for a different outcome, but you are tired of pretending everything is fine.",sad,vulnerability,sad_frame_20,SCN0595
+I feel lucky that you discover a book you love.,happy,everyday,happy_frame_22,SCN0172
+That crosses a line: someone manipulates a situation.,angry,betrayal,angry_frame_08,SCN0033
+That gave me a real sense of joy: you spend an easy afternoon with close friends.,happy,relationships,happy_frame_25,SCN0450
+I felt completely deflated when you cannot share an important occasion.,sad,disappointment,sad_frame_14,SCN0114
+"I just want to finish, but different people give conflicting information.",frustrated,miscommunication,frustrated_frame_24,SCN0349
+Something feels missing now that a promise you believed in will not be kept.,sad,loss,sad_frame_19,SCN0319
+I felt completely deflated when you feel far from people who understand you.,sad,loneliness,sad_frame_14,SCN0289
+I keep replaying what might happen if someone asks a question when you are unprepared.,anxious,performance,anxious_frame_16,SCN0416
+"I looked it up, and you buy vegetables and bread from the local shop.",neutral,routine,neutral_frame_17,SCN0467
+I've had enough of this; someone takes advantage of your willingness to help.,angry,betrayal,angry_frame_03,SCN0028
+"For today's plan, the instructions are printed on the back of the box.",neutral,information,neutral_frame_19,SCN0244
+I keep replaying what might happen if you must deal with a problem you do not understand.,anxious,safety,anxious_frame_16,SCN0491
+How is it fair that discrimination is repeatedly ignored?,angry,injustice,angry_frame_19,SCN0269
+I keep hitting the same wall: instructions are vague and you are blamed.,frustrated,miscommunication,frustrated_frame_21,SCN0346
+I've felt low since you reach for someone who is no longer there.,sad,vulnerability,sad_frame_01,SCN0576
+"I just want to finish, but a simple task fails for no clear reason.",frustrated,obstacles,frustrated_frame_24,SCN0399
+"I had hoped for a different outcome, but you admit you are still affected by what happened.",sad,vulnerability,sad_frame_20,SCN0595
+I'm getting nowhere because a deadline approaches while you wait for approval.,frustrated,blocked goals,frustrated_frame_01,SCN0051
+I'm going round in circles because fixing a task takes longer than doing it.,frustrated,hassles,frustrated_frame_09,SCN0184
+The notice states that you buy vegetables and bread from the local shop.,neutral,routine,neutral_frame_06,SCN0456
+That crosses a line: discrimination is repeatedly ignored.,angry,injustice,angry_frame_08,SCN0258
+I'm finding it hard to switch off because someone asks a question when you are unprepared.,anxious,performance,anxious_frame_09,SCN0409
+There's a knot in my stomach when you are alone somewhere that feels unsafe.,anxious,safety,anxious_frame_08,SCN0483
+I'm not willing to tolerate this anymore: a person denies something they clearly said.,angry,betrayal,angry_frame_16,SCN0041
+I'm going round in circles because you explain the same point but are misunderstood.,frustrated,miscommunication,frustrated_frame_09,SCN0334
+I'm genuinely glad that a stranger offers a kind gesture.,happy,everyday,happy_frame_09,SCN0159
+I've had enough of this; a promise is broken when others depend on it.,angry,injustice,angry_frame_03,SCN0253
+I'm finding it hard to switch off because you enter a room where you know nobody.,anxious,social,anxious_frame_09,SCN0534
+That gave me a real sense of joy: a small plan works out smoothly.,happy,everyday,happy_frame_25,SCN0175
+This is becoming so frustrating: automated support sends you in circles.,frustrated,obstacles,frustrated_frame_02,SCN0377
+What a lovely surprise that you reach a goal after setbacks.,happy,achievement,happy_frame_08,SCN0008
+I felt completely deflated when a once-close friendship becomes distant.,sad,loneliness,sad_frame_14,SCN0289
+There's a knot in my stomach when the outcome is impossible to predict.,anxious,uncertainty,anxious_frame_08,SCN0558
+What if things go wrong because you do not know what will happen after a meeting?,anxious,uncertainty,anxious_frame_05,SCN0555
+I keep replaying what might happen if you hear worrying news about someone close.,anxious,safety,anxious_frame_16,SCN0491
+Something feels missing now that an apology you needed never arrives.,sad,vulnerability,sad_frame_19,SCN0594
+I'm genuinely glad that you discover a book you love.,happy,everyday,happy_frame_09,SCN0159
+I've had enough of this; you are denied a fair chance to explain.,angry,injustice,angry_frame_03,SCN0253
+This is becoming so frustrating: you cannot find information needed to continue.,frustrated,blocked goals,frustrated_frame_02,SCN0052
+"I looked it up, and the next bus arrives in approximately ten minutes.",neutral,schedule,neutral_frame_17,SCN0517
+I'm going round in circles because you postpone something you prepared for.,frustrated,blocked goals,frustrated_frame_09,SCN0059
+"I just want to finish, but you are ready to act but lack resources.",frustrated,blocked goals,frustrated_frame_24,SCN0074
+I keep replaying what might happen if you must decide without enough information.,anxious,uncertainty,anxious_frame_16,SCN0566
+I've felt low since you miss someone who was there every day.,sad,loss,sad_frame_01,SCN0301
+I'm finding it hard to switch off because you worry about making a mistake publicly.,anxious,performance,anxious_frame_09,SCN0409
+I'm getting nowhere because a process gets stuck at the final step.,frustrated,obstacles,frustrated_frame_01,SCN0376
+I can't believe anyone thought it was okay that a clear request is deliberately ignored.,angry,disrespect,angry_frame_09,SCN0134
+I keep hitting the same wall: you repeat information you already provided.,frustrated,obstacles,frustrated_frame_21,SCN0396
+There's a knot in my stomach when you are responsible for a high-stakes task.,anxious,performance,anxious_frame_08,SCN0408
+I felt completely deflated when you reach for someone who is no longer there.,sad,vulnerability,sad_frame_14,SCN0589
+I wish things had gone differently when a once-close friendship becomes distant.,sad,loneliness,sad_frame_03,SCN0278
+That crosses a line: you are expected to stay silent about unfair treatment.,angry,boundaries,angry_frame_08,SCN0083
+"I just want to finish, but the item you need is out of stock again.",frustrated,hassles,frustrated_frame_24,SCN0199
+I can't believe anyone thought it was okay that a person keeps pushing after you say no.,angry,boundaries,angry_frame_09,SCN0084
+That gave me a real sense of joy: something you nearly gave up on works out.,happy,hope,happy_frame_25,SCN0225
+What if things go wrong because you wait for an important reply?,anxious,uncertainty,anxious_frame_05,SCN0555
+Something feels missing now that news changes what you thought was possible.,sad,disappointment,sad_frame_19,SCN0119
+"I just want to finish, but several small problems pile up in one day.",frustrated,hassles,frustrated_frame_24,SCN0199
+I felt completely deflated when you wonder how things could have gone differently.,sad,vulnerability,sad_frame_14,SCN0589
+There's a knot in my stomach when your work is about to be evaluated.,anxious,performance,anxious_frame_08,SCN0408
+How is it fair that you are blamed for another person's choices?,angry,boundaries,angry_frame_19,SCN0094
+I've had enough of this; a clear request is deliberately ignored.,angry,disrespect,angry_frame_03,SCN0128
+I've felt low since you admit you are still affected by what happened.,sad,vulnerability,sad_frame_01,SCN0576
+I'm finding it hard to switch off because you must deal with a problem you do not understand.,anxious,safety,anxious_frame_09,SCN0484
+I've had enough of this; a person keeps pushing after you say no.,angry,boundaries,angry_frame_03,SCN0078
+I wish things had gone differently when you pack away things from an earlier time.,sad,loss,sad_frame_03,SCN0303
+"I looked it up, and the package weighs just under two kilograms.",neutral,information,neutral_frame_17,SCN0242
+"At the moment, the garden has a small pond near the gate.",neutral,observation,neutral_frame_15,SCN0365
+What if things go wrong because your work is about to be evaluated?,anxious,performance,anxious_frame_05,SCN0405
+I can't believe anyone thought it was okay that an agreement is broken behind your back.,angry,betrayal,angry_frame_09,SCN0034
+I'm not willing to tolerate this anymore: someone makes a cruel joke at another person's expense.,angry,disrespect,angry_frame_16,SCN0141
+I feel lucky that you receive a thoughtful note.,happy,relationships,happy_frame_22,SCN0447
+I'm not willing to tolerate this anymore: someone is punished for a mistake they did not make.,angry,injustice,angry_frame_16,SCN0266
+I wish things had gone differently when you feel far from people who understand you.,sad,loneliness,sad_frame_03,SCN0278
+That gave me a real sense of joy: you get the last seat on a crowded train.,happy,everyday,happy_frame_25,SCN0175
+"I just want to finish, but your question receives an unrelated answer.",frustrated,miscommunication,frustrated_frame_24,SCN0349
+I've felt low since you look at photographs from a time you cannot revisit.,sad,loss,sad_frame_01,SCN0301
+What a lovely surprise that an afternoon unexpectedly becomes free.,happy,everyday,happy_frame_08,SCN0158
+That crosses a line: a vulnerable person is taken advantage of.,angry,injustice,angry_frame_08,SCN0258
+I keep hitting the same wall: a process gets stuck at the final step.,frustrated,obstacles,frustrated_frame_21,SCN0396
+"I looked it up, and the meeting notes are saved in the shared folder.",neutral,information,neutral_frame_17,SCN0242
+I've been imagining all the things that could happen if you wait for your turn in an important interview.,anxious,performance,anxious_frame_13,SCN0413
+"At the moment, the meeting is scheduled for Thursday afternoon.",neutral,schedule,neutral_frame_15,SCN0515
+What a lovely surprise that your favourite song comes on.,happy,everyday,happy_frame_08,SCN0158
+I hadn't realised how much I wanted this until a friend shows up when you least expect it.,happy,relationships,happy_frame_23,SCN0448
+"I just want to finish, but instructions are vague and you are blamed.",frustrated,miscommunication,frustrated_frame_24,SCN0349
+I've been imagining all the things that could happen if you are responsible for a high-stakes task.,anxious,performance,anxious_frame_13,SCN0413
+I'm genuinely glad that you are offered a chance to try something new.,happy,hope,happy_frame_09,SCN0209
+How is it fair that your refusal becomes an argument?,angry,boundaries,angry_frame_19,SCN0094
+What a lovely surprise that you finish a task you kept postponing.,happy,achievement,happy_frame_08,SCN0008
+"I looked it up, and you take the second road after the bridge.",neutral,routine,neutral_frame_17,SCN0467
+"For today's plan, the meeting notes are saved in the shared folder.",neutral,information,neutral_frame_19,SCN0244
+Something feels missing now that you admit you are still affected by what happened.,sad,vulnerability,sad_frame_19,SCN0594
+I keep hitting the same wall: a conversation goes in circles without a resolution.,frustrated,miscommunication,frustrated_frame_21,SCN0346
+"I had hoped for a different outcome, but you wish someone would notice you are struggling.",sad,loneliness,sad_frame_20,SCN0295
+I wish things had gone differently when you have to let go of a goal.,sad,disappointment,sad_frame_03,SCN0103
+I've felt low since you wish someone would notice you are struggling.,sad,loneliness,sad_frame_01,SCN0276
+"For today's plan, there are four chairs around the table.",neutral,observation,neutral_frame_19,SCN0369
+I wish things had gone differently when you remember how hopeful you once felt.,sad,vulnerability,sad_frame_03,SCN0578
+I've been imagining all the things that could happen if you wonder whether something you said offended someone.,anxious,social,anxious_frame_13,SCN0538
+"I had hoped for a different outcome, but you feel unseen in a crowded room.",sad,loneliness,sad_frame_20,SCN0295
+I'm genuinely glad that you arrive home to a meal someone made.,happy,everyday,happy_frame_09,SCN0159
+I keep hitting the same wall: you try the same solution repeatedly and get nowhere.,frustrated,obstacles,frustrated_frame_21,SCN0396
+I'm finding it hard to switch off because you start something without knowing what to expect.,anxious,uncertainty,anxious_frame_09,SCN0559
+I can't believe anyone thought it was okay that a person knowingly breaks your trust.,angry,betrayal,angry_frame_09,SCN0034
+I can't believe anyone thought it was okay that a decision turns out to be dishonest.,angry,injustice,angry_frame_09,SCN0259
+There's a knot in my stomach when a person close to you has an unexpected health problem.,anxious,safety,anxious_frame_08,SCN0483
+The notice states that the next bus arrives in approximately ten minutes.,neutral,schedule,neutral_frame_06,SCN0506
+I wish things had gone differently when a song brings back memories of someone you lost.,sad,loss,sad_frame_03,SCN0303
+I'm finding it hard to switch off because the outcome is impossible to predict.,anxious,uncertainty,anxious_frame_09,SCN0559
+What if things go wrong because you must deal with a problem you do not understand?,anxious,safety,anxious_frame_05,SCN0480
+I'm getting nowhere because you try the same solution repeatedly and get nowhere.,frustrated,obstacles,frustrated_frame_01,SCN0376
+That crosses a line: your work is dismissed without being heard.,angry,disrespect,angry_frame_08,SCN0133
+I keep replaying what might happen if you do not know what will happen after a meeting.,anxious,uncertainty,anxious_frame_16,SCN0566
+I've had enough of this; important information is intentionally hidden.,angry,betrayal,angry_frame_03,SCN0028
+I can't believe anyone thought it was okay that someone treats you as disposable after accepting help.,angry,betrayal,angry_frame_09,SCN0034
+I felt completely deflated when you remember how hopeful you once felt.,sad,vulnerability,sad_frame_14,SCN0589
+The usual procedure is that the printer is connected to the office network.,neutral,observation,neutral_frame_16,SCN0366
+How is it fair that someone deliberately lies to you?,angry,betrayal,angry_frame_19,SCN0044
+How is it fair that private information is shared without permission?,angry,disrespect,angry_frame_19,SCN0144
+What a lovely surprise that someone remembers a small detail about you.,happy,relationships,happy_frame_08,SCN0433
+"At the moment, the survey includes twelve questions.",neutral,information,neutral_frame_15,SCN0240
+That gave me a real sense of joy: you are offered a chance to try something new.,happy,hope,happy_frame_25,SCN0225
+I've felt low since you feel unseen in a crowded room.,sad,loneliness,sad_frame_01,SCN0276
+I'm going round in circles because you stand in a queue that barely moves.,frustrated,hassles,frustrated_frame_09,SCN0184
+I wish things had gone differently when everyone around you seems to have found their place.,sad,loneliness,sad_frame_03,SCN0278
+The notice states that the parcel was left beside the front door.,neutral,observation,neutral_frame_06,SCN0356
+I can't believe anyone thought it was okay that someone acts as if your time does not matter.,angry,disrespect,angry_frame_09,SCN0134
+I keep hitting the same wall: your question receives an unrelated answer.,frustrated,miscommunication,frustrated_frame_21,SCN0346
+I feel lucky that someone remembers a small detail about you.,happy,relationships,happy_frame_22,SCN0447
+I'm genuinely glad that an application is accepted.,happy,achievement,happy_frame_09,SCN0009
+"At the moment, the appointment has moved to next week.",neutral,schedule,neutral_frame_15,SCN0515
+I've felt low since an opportunity passes you by.,sad,disappointment,sad_frame_01,SCN0101
+"At the moment, the booking is listed under my email address.",neutral,schedule,neutral_frame_15,SCN0515
+I keep replaying what might happen if you wait for an important reply.,anxious,uncertainty,anxious_frame_16,SCN0566
+"I looked it up, and you put the documents in the top drawer.",neutral,routine,neutral_frame_17,SCN0467
+I'm not willing to tolerate this anymore: a person in authority abuses their position.,angry,injustice,angry_frame_16,SCN0266
+I'm not willing to tolerate this anymore: you are expected to stay silent about unfair treatment.,angry,boundaries,angry_frame_16,SCN0091
+"I just want to finish, but a process gets stuck at the final step.",frustrated,obstacles,frustrated_frame_24,SCN0399
+That crosses a line: you are treated unfairly.,angry,disrespect,angry_frame_08,SCN0133
+I've been imagining all the things that could happen if you wait to hear whether everyone arrived safely.,anxious,safety,anxious_frame_13,SCN0488
+I'm going round in circles because you try the same solution repeatedly and get nowhere.,frustrated,obstacles,frustrated_frame_09,SCN0384
+I'm genuinely glad that a friend shows up when you least expect it.,happy,relationships,happy_frame_09,SCN0434
+"I just want to finish, but you postpone something you prepared for.",frustrated,blocked goals,frustrated_frame_24,SCN0074
+"I just want to finish, but someone will not listen while you clarify a problem.",frustrated,miscommunication,frustrated_frame_24,SCN0349
+I've been imagining all the things that could happen if you are unsure whether it is safe to be honest.,anxious,social,anxious_frame_13,SCN0538
+"I looked it up, and the instructions are printed on the back of the box.",neutral,information,neutral_frame_17,SCN0242
+What a lovely surprise that you feel included in a new group.,happy,hope,happy_frame_08,SCN0208
+I'm genuinely glad that an afternoon unexpectedly becomes free.,happy,everyday,happy_frame_09,SCN0159
+I'm finding it hard to switch off because you sit an exam that matters a great deal.,anxious,performance,anxious_frame_09,SCN0409
+How is it fair that you are charged for something you never agreed to?,angry,injustice,angry_frame_19,SCN0269
+I hadn't realised how much I wanted this until a project comes together well.,happy,achievement,happy_frame_23,SCN0023
+What a lovely surprise that you get to help someone.,happy,hope,happy_frame_08,SCN0208
+"At the moment, you put the documents in the top drawer.",neutral,routine,neutral_frame_15,SCN0465
+I can't believe anyone thought it was okay that you are denied a fair chance to explain.,angry,injustice,angry_frame_09,SCN0259
+I've had enough of this; someone takes credit for your work.,angry,disrespect,angry_frame_03,SCN0128
+"I had hoped for a different outcome, but you say goodbye to someone you may not see again.",sad,loss,sad_frame_20,SCN0320
+The usual procedure is that the shop accepts cash and card payments.,neutral,information,neutral_frame_16,SCN0241
+I felt completely deflated when you say goodbye to someone you may not see again.,sad,loss,sad_frame_14,SCN0314
+I've been imagining all the things that could happen if you hear an unusual noise outside late at night.,anxious,safety,anxious_frame_13,SCN0488
+I feel lucky that you finish a task you kept postponing.,happy,achievement,happy_frame_22,SCN0022
+The usual procedure is that the parcel was left beside the front door.,neutral,observation,neutral_frame_16,SCN0366
+I've had enough of this; someone uses your belongings without asking.,angry,boundaries,angry_frame_03,SCN0078
+I keep replaying what might happen if you wait for a result that could change your plans.,anxious,uncertainty,anxious_frame_16,SCN0566
+I've been imagining all the things that could happen if you must decide without enough information.,anxious,uncertainty,anxious_frame_13,SCN0563
+This is becoming so frustrating: avoidable delays hold up your progress.,frustrated,blocked goals,frustrated_frame_02,SCN0052
+I can't believe anyone thought it was okay that a hurtful comment continues after you object.,angry,boundaries,angry_frame_09,SCN0084
+I've been imagining all the things that could happen if you travel somewhere unfamiliar after dark.,anxious,safety,anxious_frame_13,SCN0488
+This is becoming so frustrating: a mistake keeps being misunderstood.,frustrated,miscommunication,frustrated_frame_02,SCN0327
+I'm going round in circles because interruptions make it impossible to concentrate.,frustrated,hassles,frustrated_frame_09,SCN0184
+I'm genuinely glad that you get to help someone.,happy,hope,happy_frame_09,SCN0209
+I'm finding it hard to switch off because you wait for your turn in an important interview.,anxious,performance,anxious_frame_09,SCN0409
+"At the moment, the restaurant menu is available online.",neutral,observation,neutral_frame_15,SCN0365
+This is becoming so frustrating: interruptions make it impossible to concentrate.,frustrated,hassles,frustrated_frame_02,SCN0177
+What a lovely surprise that someone welcomes you after a long absence.,happy,relationships,happy_frame_08,SCN0433
+I've had enough of this; someone deliberately lies to you.,angry,betrayal,angry_frame_03,SCN0028
+I've been imagining all the things that could happen if you start something without knowing what to expect.,anxious,uncertainty,anxious_frame_13,SCN0563
+I wish things had gone differently when an important chapter closes.,sad,loss,sad_frame_03,SCN0303
+I felt completely deflated when you are tired of pretending everything is fine.,sad,vulnerability,sad_frame_14,SCN0589
+How is it fair that someone uses your belongings without asking?,angry,boundaries,angry_frame_19,SCN0094
+I can't believe anyone thought it was okay that you are charged for something you never agreed to.,angry,injustice,angry_frame_09,SCN0259
+I've been imagining all the things that could happen if someone who should be home is not answering.,anxious,safety,anxious_frame_13,SCN0488
+What if things go wrong because you try to remember everything before a presentation?,anxious,performance,anxious_frame_05,SCN0405
+"At the moment, you prepare rice and lentils for lunch.",neutral,routine,neutral_frame_15,SCN0465
+This is becoming so frustrating: you redo work because expectations changed.,frustrated,miscommunication,frustrated_frame_02,SCN0327
+"I looked it up, and the meeting is scheduled for Thursday afternoon.",neutral,schedule,neutral_frame_17,SCN0517
+I feel lucky that someone welcomes you after a long absence.,happy,relationships,happy_frame_22,SCN0447
+I can't believe anyone thought it was okay that someone takes advantage of your willingness to help.,angry,betrayal,angry_frame_09,SCN0034
+I can't believe anyone thought it was okay that someone gets away with deliberately causing harm.,angry,injustice,angry_frame_09,SCN0259
+I'm getting nowhere because you explain the same point but are misunderstood.,frustrated,miscommunication,frustrated_frame_01,SCN0326
+I wish things had gone differently when you try to explain why something hurt.,sad,vulnerability,sad_frame_03,SCN0578
+I keep hitting the same wall: avoidable delays hold up your progress.,frustrated,blocked goals,frustrated_frame_21,SCN0071
+I feel lucky that an old friend gets in touch unexpectedly.,happy,relationships,happy_frame_22,SCN0447
+I can't believe anyone thought it was okay that someone ignores your request for space.,angry,boundaries,angry_frame_09,SCN0084
+I'm getting nowhere because a simple task fails for no clear reason.,frustrated,obstacles,frustrated_frame_01,SCN0376
+I hadn't realised how much I wanted this until you make plans you are excited about.,happy,hope,happy_frame_23,SCN0223
+"I just want to finish, but you clean up a mess someone repeatedly leaves.",frustrated,hassles,frustrated_frame_24,SCN0199
+The notice states that the building has two entrances.,neutral,information,neutral_frame_06,SCN0231
+Something feels missing now that someone else's loss reminds you of your own.,sad,vulnerability,sad_frame_19,SCN0594
+I'm genuinely glad that a fresh start feels possible.,happy,hope,happy_frame_09,SCN0209
+I've felt low since a familiar part of life comes to an end.,sad,loss,sad_frame_01,SCN0301
+I felt completely deflated when everyone around you seems to have found their place.,sad,loneliness,sad_frame_14,SCN0289
+I can't believe anyone thought it was okay that a vulnerable person is taken advantage of.,angry,injustice,angry_frame_09,SCN0259
+I'm getting nowhere because you stand in a queue that barely moves.,frustrated,hassles,frustrated_frame_01,SCN0176
+I keep hitting the same wall: interruptions make it impossible to concentrate.,frustrated,hassles,frustrated_frame_21,SCN0196
+There's a knot in my stomach when you prepare for a change you did not choose.,anxious,uncertainty,anxious_frame_08,SCN0558
+That gave me a real sense of joy: you discover a book you love.,happy,everyday,happy_frame_25,SCN0175
+"At the moment, the kitchen window faces the courtyard.",neutral,routine,neutral_frame_15,SCN0465
+I felt completely deflated when you want to talk but do not know whom to call.,sad,loneliness,sad_frame_14,SCN0289
+I've felt low since you have to let go of a goal.,sad,disappointment,sad_frame_01,SCN0101
+What if things go wrong because you prepare for a difficult conversation?,anxious,performance,anxious_frame_05,SCN0405
+I keep replaying what might happen if you speak in front of a large audience.,anxious,performance,anxious_frame_16,SCN0416
+That gave me a real sense of joy: you find a solution after several attempts.,happy,hope,happy_frame_25,SCN0225
+Something feels missing now that a song brings back memories of someone you lost.,sad,loss,sad_frame_19,SCN0319
+I can't believe anyone thought it was okay that private information is shared without permission.,angry,disrespect,angry_frame_09,SCN0134
+I'm finding it hard to switch off because you are unsure whether it is safe to be honest.,anxious,social,anxious_frame_09,SCN0534
+I'm going round in circles because you redo work because expectations changed.,frustrated,miscommunication,frustrated_frame_09,SCN0334
+I'm finding it hard to switch off because you are responsible for a high-stakes task.,anxious,performance,anxious_frame_09,SCN0409
+The notice states that the train leaves from platform four at 8:15.,neutral,schedule,neutral_frame_06,SCN0506
+I've had enough of this; a vulnerable person is taken advantage of.,angry,injustice,angry_frame_03,SCN0253
+I'm finding it hard to switch off because you are alone somewhere that feels unsafe.,anxious,safety,anxious_frame_09,SCN0484
+I hadn't realised how much I wanted this until you solve a problem that seemed impossible.,happy,achievement,happy_frame_23,SCN0023
+I wish things had gone differently when you have nobody nearby to share a memory with.,sad,loneliness,sad_frame_03,SCN0278
+The notice states that the class begins after the lunch break.,neutral,schedule,neutral_frame_06,SCN0506
+I'm going round in circles because avoidable delays hold up your progress.,frustrated,blocked goals,frustrated_frame_09,SCN0059
+I'm not willing to tolerate this anymore: rules apply differently to different people.,angry,injustice,angry_frame_16,SCN0266
+Something feels missing now that you have to ask for help.,sad,vulnerability,sad_frame_19,SCN0594
+The usual procedure is that you take the second road after the bridge.,neutral,routine,neutral_frame_16,SCN0466
+I felt completely deflated when you have to ask for help.,sad,vulnerability,sad_frame_14,SCN0589
+"I had hoped for a different outcome, but a promise you believed in will not be kept.",sad,loss,sad_frame_20,SCN0320
+I can't believe anyone thought it was okay that a promise is broken when others depend on it.,angry,injustice,angry_frame_09,SCN0259
+I keep replaying what might happen if your work is about to be evaluated.,anxious,performance,anxious_frame_16,SCN0416
+I'm going round in circles because you lose progress when an application stops responding.,frustrated,obstacles,frustrated_frame_09,SCN0384
+I can't believe anyone thought it was okay that you are pressured to accept something unwanted.,angry,boundaries,angry_frame_09,SCN0084
+I feel lucky that you notice your own progress.,happy,achievement,happy_frame_22,SCN0022
+What if things go wrong because you are responsible for a high-stakes task?,anxious,performance,anxious_frame_05,SCN0405
+The notice states that the notice is attached to the main entrance.,neutral,routine,neutral_frame_06,SCN0456
+"I had hoped for a different outcome, but you miss someone who was there every day.",sad,loss,sad_frame_20,SCN0320
+"For today's plan, the booking is listed under my email address.",neutral,schedule,neutral_frame_19,SCN0519
+I'm not willing to tolerate this anymore: important information is intentionally hidden.,angry,betrayal,angry_frame_16,SCN0041
+I felt completely deflated when you wish someone would notice you are struggling.,sad,loneliness,sad_frame_14,SCN0289
+That crosses a line: someone ignores your request for space.,angry,boundaries,angry_frame_08,SCN0083
+"I had hoped for a different outcome, but you feel far from people who understand you.",sad,loneliness,sad_frame_20,SCN0295
+I keep replaying what might happen if you hear an unusual noise outside late at night.,anxious,safety,anxious_frame_16,SCN0491
+"For today's plan, the forecast mentions light rain tomorrow.",neutral,routine,neutral_frame_19,SCN0469
+I felt completely deflated when an opportunity passes you by.,sad,disappointment,sad_frame_14,SCN0114
+I keep hitting the same wall: automated support sends you in circles.,frustrated,obstacles,frustrated_frame_21,SCN0396
+There's a knot in my stomach when you cannot tell how someone will react.,anxious,uncertainty,anxious_frame_08,SCN0558
+What if things go wrong because you wait to learn whether you upset a friend?,anxious,social,anxious_frame_05,SCN0530
+I'm genuinely glad that someone gives you reassuring news.,happy,hope,happy_frame_09,SCN0209
+That gave me a real sense of joy: someone welcomes you after a long absence.,happy,relationships,happy_frame_25,SCN0450
+I'm going round in circles because nobody can explain a process clearly.,frustrated,miscommunication,frustrated_frame_09,SCN0334
+I've felt low since an important chapter closes.,sad,loss,sad_frame_01,SCN0301
+I feel lucky that good news arrives after a long wait.,happy,achievement,happy_frame_22,SCN0022
+"For today's plan, the washing machine finishes its cycle in the morning.",neutral,routine,neutral_frame_19,SCN0469
+"I looked it up, and the appointment has moved to next week.",neutral,schedule,neutral_frame_17,SCN0517
+The usual procedure is that the meeting notes are saved in the shared folder.,neutral,information,neutral_frame_16,SCN0241
+I keep replaying what might happen if you notice something that could put a person at risk.,anxious,safety,anxious_frame_16,SCN0491
+The usual procedure is that the file contains three separate worksheets.,neutral,information,neutral_frame_16,SCN0241
+I keep replaying what might happen if you join a group where everyone knows each other.,anxious,social,anxious_frame_16,SCN0541
+"I had hoped for a different outcome, but you spend a special day alone.",sad,loneliness,sad_frame_20,SCN0295
+"I looked it up, and the shop has changed its opening hours.",neutral,observation,neutral_frame_17,SCN0367
+How is it fair that you are blamed before anyone asks what happened?,angry,disrespect,angry_frame_19,SCN0144
+I felt completely deflated when you admit you are still affected by what happened.,sad,vulnerability,sad_frame_14,SCN0589
+I'm finding it hard to switch off because you cannot tell how someone will react.,anxious,uncertainty,anxious_frame_09,SCN0559
+The notice states that the printer is connected to the office network.,neutral,observation,neutral_frame_06,SCN0356
