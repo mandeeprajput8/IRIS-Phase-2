@@ -63,64 +63,224 @@ The combination of these components forms the foundation for a more **personal, 
 
 ---
 
+
 # 🎭 Emotion & Machine Learning
 
 One of the core ideas behind IRIS is that a personal assistant should understand more than just the literal content of a request.
 
-IRIS integrates a **machine learning-based emotion classification component** into its processing pipeline to identify emotional context from user input.
+IRIS integrates a **machine learning-based emotion classification component** into its processing pipeline to identify the emotional context associated with user input.
 
-### 🤖 Emotion Classification Model
+## 🤖 Emotion Classification Model
 
-IRIS incorporates an **emotion classification model** into its processing pipeline using machine learning.
+The emotion classification component is developed using a supervised machine learning approach to classify user input into six emotion categories:
 
-The model analyzes the user's input to identify its associated emotional context, providing IRIS with an additional layer of information beyond the literal content of the request.
+- Happy
+- Sad
+- Angry
+- Anxious
+- Frustrated
+- Neutral
 
-This allows the assistant's processing pipeline to consider both:
+Two classification algorithms were evaluated during model development:
+
+- **Logistic Regression** — baseline classification model.
+- **Multinomial Naive Bayes** — selected final classification model.
+
+The final model uses a **TF-IDF (Term Frequency–Inverse Document Frequency) vectorization pipeline combined with Multinomial Naive Bayes**.
+
+### Model Pipeline
+
+The input text passes through the following processing stages:
+
+```text
+             User Input
+                 |
+                 ▼
+         Text Preprocessing
+                 |
+                 ▼
+          TF-IDF Vectorizer
+          (Unigrams + Bigrams)
+                 |
+                 ▼
+       Multinomial Naive Bayes
+                 |
+                 ▼
+       Emotion Classification
+                 |
+                 ▼
+       Emotion + Probability
+```
+
+The TF-IDF vectorizer extracts unigram and bigram features, while the classifier predicts the most likely emotion category.
+
+### Dataset & Preprocessing
+
+The emotion classification model was developed using a custom synthetic dataset containing **6,000 text samples**, distributed equally across six emotion categories.
+
+| Dataset Attribute | Details |
+|---|---:|
+| Total samples | 6,000 |
+| Emotion categories | 6 |
+| Samples per category | 1,000 |
+| Scenario categories | 24 |
+| Generation groups | 150 |
+| Unique scenario IDs | 600 |
+
+The dataset underwent preprocessing involving:
+
+- Missing-value checks and removal.
+- Text cleaning and whitespace normalization.
+- Quote normalization.
+- Emotion-label normalization.
+- Duplicate text-label pair checks.
+- Conflicting-label checks.
+
+The dataset was divided into training and testing subsets using an **80:20 grouped stratified split**.
+
+| Dataset | Samples | Samples per emotion |
+|---|---:|---:|
+| Training | 4,800 | 800 |
+| Testing | 1,200 | 200 |
+
+A `StratifiedGroupKFold` strategy was used to maintain class distribution while keeping generation groups separate between training and testing.
+
+### Model Training & Hyperparameter Tuning
+
+Both classifiers were trained using TF-IDF features and evaluated through **5-fold Stratified Group Cross-Validation**, with Macro F1-score as the optimization metric.
+
+**TF-IDF Configuration:**
+
+- Maximum features: 10,000
+- N-gram range: (1, 2)
+- Sublinear TF scaling: Enabled
+- Stop-word removal: Disabled
+
+**Hyperparameter tuning:**
+
+| Model | Hyperparameter | Tested Values | Best Value |
+|---|---|---|---|
+| Logistic Regression | C | 0.1, 1, 10 | 10 |
+| Multinomial Naive Bayes | Alpha | 0.01, 0.1, 0.5, 1, 2, 5 | 0.01 |
+
+### Model Comparison — Cross-Validation
+
+The following results were obtained during 5-fold grouped cross-validation:
+
+| Model | Best Configuration | Macro F1 |
+|---|---|---:|
+| Logistic Regression | C = 10 | 97.79% |
+| Multinomial Naive Bayes | Alpha = 0.01 | **99.65%** |
+
+Multinomial Naive Bayes achieved the higher cross-validation Macro F1-score and was selected for the final implementation.
+
+### Primary Test Set Evaluation
+
+Both models were evaluated on the same held-out test dataset containing 1,200 samples.
+
+| Evaluation Metric | Logistic Regression | Multinomial Naive Bayes |
+|---|---:|---:|
+| Accuracy | 99.92% | 99.92% |
+| Macro Precision | 99.92% | 99.92% |
+| Macro Recall | 99.92% | 99.92% |
+| Macro F1-score | 99.92% | 99.92% |
+| Correct Predictions | 1,199 | 1,199 |
+| Misclassifications | 1 | 1 |
+
+Both models achieved identical performance on the primary test set, with only one misclassified sample.
+
+### Independent External Evaluation
+
+To examine how well the models generalized beyond the primary synthetic dataset, an additional independently authored external validation dataset containing 300 samples was introduced.
+
+The dataset contained 50 samples for each of the six emotion categories.
+
+**External Evaluation Results:**
+
+| Evaluation Metric | Logistic Regression | Multinomial Naive Bayes |
+|---|---:|---:|
+| Accuracy | 48.33% | **63.00%** |
+| Macro Precision | 61.84% | **68.24%** |
+| Macro Recall | 48.33% | **63.00%** |
+| Macro F1-score | 47.60% | **62.23%** |
+
+Multinomial Naive Bayes achieved a 14.67 percentage-point improvement in external accuracy compared with Logistic Regression.
+
+This evaluation highlighted a generalization gap between the primary test results and independently authored conversational examples.
+
+The external dataset was used exclusively for evaluation and was not involved in model training or hyperparameter selection.
+
+### Final Model Selection
+
+**Multinomial Naive Bayes** was selected as the final emotion classification model based on:
+
+- Highest grouped cross-validation Macro F1-score.
+- Performance equivalent to Logistic Regression on the primary test set.
+- Better accuracy and Macro F1-score on independent external evaluation.
+- Lightweight architecture and computational efficiency.
+- Native probability prediction support through `predict_proba()`.
+
+The selected model uses:
+
+```python
+MultinomialNB(alpha=0.01)
+```
+
+The complete trained TF-IDF and Naive Bayes pipeline is serialized using Python Pickle and loaded by IRIS during inference.
+
+### Advantages of the ML Component
+
+- Lightweight and computationally efficient classification.
+- Supports six distinct emotion categories.
+- TF-IDF captures both individual words and two-word combinations.
+- Grouped cross-validation helps reduce generation-group leakage.
+- Native probability outputs for confidence-aware inference.
+- Modular integration with the existing Python assistant backend.
+
+### Limitations
+
+- The training dataset is synthetic and may not fully represent natural human conversations.
+- External evaluation indicates limited generalization to independently phrased conversational inputs.
+- Semantically overlapping categories, particularly angry and frustrated, can be difficult to distinguish.
+- TF-IDF and Naive Bayes have limited contextual understanding compared with transformer-based language models.
+- Predicted probabilities are not necessarily calibrated confidence scores.
+- Emotion classification represents an estimated textual emotion category rather than a definitive understanding of a user's emotional state.
+
+### Role Within IRIS
+
+The emotion classification component acts as an additional intelligence layer within the assistant's processing pipeline.
+
+It allows IRIS to consider both:
 
 - **What the user is saying**
-- **The emotional context associated with the input**
-
-The emotion classification component therefore acts as an additional intelligence layer within IRIS, forming the foundation for more emotionally-aware interactions.
+- **The predicted emotional context associated with the input**
 
 The broader interaction flow can be represented as:
 
 ```text
-                    User Input
-                        │
-              ┌─────────┴─────────┐
-              ▼                   ▼
-         Command Analysis    Emotion Analysis
-              │                   │
-              └─────────┬─────────┘
-                        ▼
-                 IRIS Processing
-                        │
-                        ▼
+                     User Input
+                         |
+               ┌─────────┴─────────┐
+               ▼                   ▼
+          Command Analysis    Emotion Analysis
+                                   |
+                             TF-IDF + NB
+                                   |
+               └─────────┬─────────┘
+                         ▼
+                  IRIS Processing
+                         |
+                         ▼
                  Context-Aware
                     Response
-                        │
-              ┌─────────┴─────────┐
-              ▼                   ▼
-          Text Response       Voice Response
+                         |
+               ┌─────────┴─────────┐
+               ▼                   ▼
+           Text Response       Voice Response
 ```
 
-The emotion model provides an additional layer of context that can be used alongside the user's request, memory, and command information.
+The emotion model therefore works alongside IRIS's command processing, memory, and response generation components to provide an additional layer of contextual information.
 
-### Why Emotion Awareness?
-
-Traditional assistants generally focus on:
-
-> **"What did the user ask?"**
-
-IRIS aims to also consider:
-
-> **"What is the user's emotional context while asking it?"**
-
-This creates a foundation for developing interactions that can become more natural, personalized, and context-sensitive over time.
-
-The machine learning component is therefore not treated as an isolated model — it is integrated into the broader assistant architecture.
-
----
 
 # 🖥️ The IRIS Interface
 
