@@ -1054,3 +1054,30 @@
 
   display: block;
 }
+
+.startup-controls {
+  position: absolute;
+  bottom: 28px;
+  right: 28px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.startup-control-btn {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(10, 14, 24, 0.7);
+  color: #e6f4ff;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.startup-control-btn:hover {
+  background: rgba(30, 45, 75, 0.85);
+  border-color: rgba(120, 200, 255, 0.6);
+}

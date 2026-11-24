@@ -28,6 +28,8 @@ function App() {
   const [voiceStatus, setVoiceStatus] = useState('checking');
   // Controls whether the IRIS startup animation is visible
   const [showStartup, setShowStartup] = useState(true);
+  // Tracks whether the startup video had to fall back to muted autoplay
+  const [startupMuted, setStartupMuted] = useState(false);
   // Stores the activity messages displayed in the Activity panel, Initially shows that the frontend interface has been initialized
   const [activities, setActivities] = useState([
     'Interface initialized'
@@ -42,8 +44,14 @@ function App() {
   // so the conversation can automatically scroll down
   const conversationEndRef = useRef(null);
 
+  // References the startup video element for controlled autoplay/unmute
+  const startupVideoRef = useRef(null);
+
   // Prevents the startup sequence from running more than once
   const startupRef = useRef(false);
+
+  // Holds the latest listenToUser callback for recursive voice cycles
+  const listenToUserRef = useRef(null);
 
   // Stores the previous combined system status
   // Used to detect real system changes instead of repeatedly
@@ -132,7 +140,7 @@ function App() {
 
       if (!data.heard) {
         setListening(false);
-        listenToUser();
+        listenToUserRef.current?.();
         return;
       }
 
@@ -247,7 +255,7 @@ function App() {
       // 7. LISTEN AGAIN
       // =======================================================
 
-      listenToUser();
+      listenToUserRef.current?.();
 
     } catch (error) {
 
@@ -700,6 +708,82 @@ function App() {
   // EFFECTS
   // =========================================================
 
+  useEffect(() => {
+    listenToUserRef.current = listenToUser;
+  }, [listenToUser]);
+
+  // =========================================================
+  // IRIS STARTUP VIDEO AUTOPLAY
+  // =========================================================
+  // Browsers block unmuted <video autoPlay> before user interaction,
+  // leaving a black screen where onEnded never fires. Try unmuted first,
+  // then fall back to muted autoplay (or dismiss startup on hard error).
+
+  useEffect(() => {
+
+    if (!showStartup) return;
+
+    const video = startupVideoRef.current;
+    if (!video) return;
+
+    let cancelled = false;
+
+    const startPlayback = async () => {
+      if (!video.paused) {
+        if (!cancelled) {
+          setStartupMuted(video.muted);
+        }
+        return;
+      }
+
+      try {
+        video.muted = false;
+        await video.play();
+        if (!cancelled) {
+          setStartupMuted(false);
+        }
+      } catch (err) {
+        if (err?.name === 'AbortError') return;
+
+        try {
+          video.muted = true;
+          await video.play();
+          if (!cancelled) {
+            setStartupMuted(true);
+          }
+        } catch (mutedErr) {
+          if (mutedErr?.name === 'AbortError') return;
+          if (!cancelled) {
+            setShowStartup(false);
+          }
+        }
+      }
+    };
+
+    startPlayback();
+
+    return () => {
+      cancelled = true;
+    };
+
+  }, [showStartup]);
+
+  const handleUnmuteStartup = async () => {
+    const video = startupVideoRef.current;
+    if (!video) return;
+
+    video.muted = false;
+    setStartupMuted(false);
+
+    if (video.paused) {
+      try {
+        await video.play();
+      } catch {
+        // Ignore if playback cannot resume
+      }
+    }
+  };
+
   // =========================================================
   // IRIS STARTUP SEQUENCE
   // =========================================================
@@ -709,6 +793,9 @@ function App() {
     // Wait for the startup animation to finish
     if (showStartup) return;
 
+    // Wait until the backend is online so startup TTS does not fail on boot
+    if (backendStatus !== 'online') return;
+
     // Prevent the startup sequence from running more than once
     if (startupRef.current) return;
 
@@ -716,7 +803,7 @@ function App() {
 
     startIRIS();
 
-  }, [showStartup, startIRIS]);
+  }, [showStartup, backendStatus, startIRIS]);
 
 
   // =========================================================
@@ -929,19 +1016,49 @@ function App() {
       ========================================================= */}
 
       {showStartup && (
-        <div className="startup-screen">
+        <div
+          className="startup-screen"
+          onClick={startupMuted ? handleUnmuteStartup : undefined}
+        >
 
           <video
-            autoPlay
-            muted
+            ref={startupVideoRef}
             playsInline
+            preload="auto"
             onEnded={() => setShowStartup(false)}
+            onError={() => setShowStartup(false)}
           >
             <source
               src="/iris-startup.mp4"
               type="video/mp4"
             />
           </video>
+
+          <div className="startup-controls">
+            {startupMuted && (
+              <button
+                type="button"
+                className="startup-control-btn"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleUnmuteStartup();
+                }}
+              >
+                Click to unmute
+              </button>
+            )}
+
+            <button
+              type="button"
+              className="startup-control-btn"
+              onClick={(e) => {
+                e.stopPropagation();
+                setShowStartup(false);
+              }}
+            >
+              Skip
+            </button>
+          </div>
 
         </div>
       )}
